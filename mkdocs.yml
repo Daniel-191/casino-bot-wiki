@@ -1,0 +1,243 @@
+site_name: Paradise Bot Wiki
+site_description: Complete guide for Paradise Bot - Discord's premier gambling bot
+site_author: mal023
+site_url: https://yourusername.github.io/Casino-Bot/
+
+theme:
+  name: material
+  logo: assets/paradise.png
+  favicon: assets/paradise.png
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    # Dark mode (default)
+    - scheme: slate
+      primary: red
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    # Light mode
+    - scheme: default
+      primary: red
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.instant
+    - navigation.instant.progress
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/toc-scroll.js
+  - javascripts/logo-loader.js
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+
+  - General Information:
+    - general/index.md
+    - About Paradise Bot: general/about.md
+    - Upgrades: general/upgrades.md
+    - Supporting the Bot: general/supporting.md
+
+    - Rules: general/rules.md
+    - FAQ: support/faq.md
+    - Settings: general/settings.md
+    - Language: general/language.md
+
+  - Frequently Asked Questions:
+    - faq/index.md
+    - "Can I customize the bot?": faq/customize.md
+    - "Emojis aren't working": faq/emojis.md
+    - "Restrict commands to channels?": faq/restrict.md
+    - "Is the bot rigged?": faq/rigged.md
+    - "Terms of Service": faq/tos.md
+    - "Why are commands restricted?": faq/restricted.md
+
+  - Support:
+    - support/index.md
+    - Troubleshooting: support/troubleshooting.md
+    - AI Support: support/ai-support.md
+    - Ask for Help: support/ask-for-help.md
+    - Report Bugs: support/report-bugs.md
+    - Suggestions: support/suggestions.md
+    - Contact: support/contact.md
+
+  - Money Management:
+    - economy/money-management/index.md
+    - /balance: economy/money-management/balance.md
+    - /deposit: economy/money-management/deposit.md
+    - /withdraw: economy/money-management/withdraw.md
+    - /pay: economy/money-management/pay.md
+    - /networth: economy/money-management/networth.md
+    - /leaderboard: economy/money-management/leaderboard.md
+    - /transactions: economy/money-management/transactions.md
+    - /transactions_toggle: economy/money-management/transactions-toggle.md
+    - /cooldowns: economy/money-management/cooldowns.md
+    - /stats: economy/money-management/stats.md
+
+  - Earning Money:
+    - economy/earning/index.md
+    - /daily: economy/earning/daily.md
+    - /hourly: economy/earning/hourly.md
+    - /weekly: economy/earning/weekly.md
+    - /monthly: economy/earning/monthly.md
+    - /beg: economy/earning/beg.md
+    - /vote: economy/earning/vote.md
+    - /vote-milestones: economy/earning/vote-milestones.md
+
+  - Crime System:
+    - economy/crime/index.md
+    - /crime: economy/crime/crime.md
+    - /crimestats: economy/crime/crimestats.md
+
+  - Robbery:
+    - economy/robbery/index.md
+    - /rob: economy/robbery/rob.md
+
+  - Banking System: features/economy/banking.md
+
+  - Voting System: features/economy/voting.md
+
+  - Lottery:
+    - features/lottery/index.md
+    - /lottery: features/lottery/lottery.md
+
+  - Scratch Tickets:
+    - economy/scratch/index.md
+    - /open: economy/scratch/open.md
+    - /inventory: economy/scratch/inventory.md
+    - /history: economy/scratch/history.md
+    - /pay: economy/scratch/pay.md
+    - /pay-history: economy/scratch/pay-history.md
+    - /weekly-scratch: economy/scratch/weekly-scratch.md
+    - /stats: economy/scratch/stats.md
+
+  - Casino Games:
+    - games/casino/index.md
+    - /baccarat: games/casino/baccarat.md
+    - /blackjack: games/casino/blackjack.md
+    - /poker: games/casino/poker.md
+    - /coinflip: games/casino/coinflip.md
+    - /dice: games/casino/dice.md
+    - /crash: games/casino/crash.md
+    - /tower: games/casino/tower.md
+    - /minesweeper: games/casino/minesweeper.md
+    - /plinko: games/casino/plinko.md
+    - /slots: games/casino/slots.md
+    - /roulette: games/casino/roulette.md
+    - /wheel-of-fortune: games/casino/wheel-of-fortune.md
+    - /horse-race: games/casino/horse-race.md
+    - /sportsbet: games/casino/sportsbet.md
+
+    - /rps: games/casino/rps.md
+
+  - Multiplayer Games:
+    - games/multiplayer/index.md
+    - /multiblackjack: games/multiplayer/multiblackjack.md
+
+    - /multiplayer_dice: games/multiplayer/multiplayer-dice.md
+    - /rps-multiplayer: games/multiplayer/rps-multiplayer.md
+    - /coinflip-duel: games/multiplayer/coinflip-duel.md
+    - /diceduel: games/multiplayer/diceduel.md
+    - /russian-roulette: games/multiplayer/russian-roulette.md
+    - /buckshot: games/multiplayer/buckshot.md
+    - /simple-buckshot: games/multiplayer/simple-buckshot.md
+    - /fight: games/multiplayer/fight.md
+    - /murdermystery: games/multiplayer/murdermystery.md
+
+    - /battleship: games/multiplayer/battleship.md
+    - /connect4: games/multiplayer/connect4.md
+    - /tic-tac-toe: games/multiplayer/tictactoe.md
+    - /wordle: games/multiplayer/wordle.md
+
+  - Heists:
+    - games/heists/index.md
+    - /heist: games/heists/heist.md
+    - /solo-heist: games/heists/solo-heist.md
+    - /heist-stats: games/heists/heist-stats.md
+
+  - Farming:
+    - features/farming/index.md
+    - /farming: features/farming/farming.md
+    - /farm-view: features/farming/farm-view.md
+    - /farming-events: features/farming/events.md
+    - /farming-stats: features/farming/stats.md
+
+  - Pets:
+    - features/pets/index.md
+    - /pets: features/pets/pets.md
+    - /pet-stats: features/pets/pet-stats.md
+
+  - Properties: features/properties/index.md
+
+  - Mining:
+    - features/mining/index.md
+    - /dig: features/mining/dig.md
+    - /depths: features/mining/depths.md
+    - /inventory: features/mining/inventory.md
+    - /profile: features/mining/profile.md
+    - /shop: features/mining/shop.md
+
+  - Fishing:
+    - features/fishing/index.md
+    - /fish: features/fishing/fish.md
+    - /fish-stats: features/fishing/fish-stats.md
+
+
+  - Restaurants:
+    - features/restaurants/index.md
+    - Fries: features/restaurants/fries.md
+
+  - Store & Items:
+    - features/store/index.md
+    - /shop: features/store/shop.md
+    - /store: features/store/store.md
+    - Patreon Shop: features/store/patreon.md
+
+  - Other Features:
+    - features/other/index.md
+    - /donate: features/other/donate.md
+    - /freemoney: features/other/freemoney.md
+    - /games: features/other/games.md
+    - /links: features/other/links.md
+    - /quotes: features/other/quotes.md
+    - /tos: features/other/tos.md
+
+    - /guide: features/other/guide.md
+
+
+
+  - In Closing: closing.md
