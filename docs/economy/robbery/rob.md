@@ -23,7 +23,7 @@ Attempt to rob another player.
 **Mechanics:**
 
 - **Stake:** 50% of target's wallet balance. You must have that much in your own wallet to attempt.
-- **Success chance:** 35%.
+- **Success chance:** 43.33%.
 - **Minimum balance to attempt:** $1,000 in your wallet.
 - **On success:** you receive (stake − 2% tax − 15% anonymous tax if enabled). Target loses the full stake.
 - **On failure:** you lose the stake (capped at your wallet) as a fine. Target keeps their money.

@@ -36,7 +36,15 @@ For every spot you click:
    - Lucky Charm tool (+25% rare chance) if active
 2. Roll a sell value within the ore's range, multiplied by pickaxe + perk **value bonus**.
 3. Calculate XP based on rarity, multiplied by pickaxe + perk **XP bonus**.
-4. Award everything to your account; level-up happens immediately.
+4. XP is awarded immediately (level-ups happen mid-session), and the ore goes
+   into your inventory with its rolled value banked to it.
+
+!!! note "Ores are not auto-sold"
+    Mining never pays money directly. Every ore lands in your inventory carrying
+    the value it rolled - bonuses from your pickaxe, perks, Golden Touch and the
+    donor Mine All are locked in at that moment. You collect the money when you
+    sell it in [`/mine inventory`](inventory.md), so holding an ore for a recipe
+    never costs you value.
 
 ## Cooldown
 

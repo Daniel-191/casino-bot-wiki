@@ -7,7 +7,7 @@ Mine ores from depth-based veins, sell them for money, level up to unlock deeper
 1. **`/mine dig`** opens an interactive 4×5 grid (5 pages = 100 spots per session).
 2. Click spots to extract ores - each click rolls from the current depth's ore pool.
 3. **Stronger pickaxes + higher levels = better ores, more XP, more value.**
-4. Sell ores via [`/mine inventory`](inventory.md) or save **crafting ores** for upgrading your pickaxe.
+4. Every ore goes into your inventory - sell it via [`/mine inventory`](inventory.md) for money, or save it for a pickaxe recipe.
 5. Buy/craft a better pickaxe → switch to a deeper depth → bigger payouts.
 
 ## Commands

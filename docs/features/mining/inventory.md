@@ -4,11 +4,14 @@ View your collected ores, sell them for money, or craft and equip pickaxes.
 
 ## Description
 
-Your mining backpack. Shows every ore you've extracted but not yet sold, plus crafting ores reserved for pickaxe recipes. From here you can:
+Your mining backpack. Every ore you extract lands here and stays until you sell it or spend it on a recipe - **mining never auto-sells anything**. From here you can:
 
-- **Sell ores** - convert all (or selected ores) to money at their sell values.
-- **Craft pickaxes** - spend the right ores + money to build a craft-only pickaxe.
+- **Sell Ores** - pick which ore stacks to convert to money, keeping recipe materials.
+- **Sell All** - convert your entire backpack to money in one click.
+- **Craft pickaxes** - spend the right ores + money to build a pickaxe.
 - **Equip pickaxes** - switch to any pickaxe you own.
+
+Each ore stack shows the money it's worth. That figure is the sum of the values the ores rolled when you mined them, so your pickaxe, perk and ability bonuses are already baked in - saving an ore for crafting never loses you value.
 
 ## Usage
 
@@ -20,13 +23,13 @@ Your mining backpack. Shows every ore you've extracted but not yet sold, plus cr
 
 ## What it shows
 
-- **Crafting Ores** - coal, iron, copper, silver, gold, sapphire, obsidian, ruby, emerald, fire gem, lava crystal, platinum, mythril, dragon stone, star metal, core fragment, stardust, crystal, void shard, aether crystal, singularity.
+- **Ores** - every ore you're holding, with its quantity and total sell value. Ores marked ⚒️ are required by at least one crafting recipe (stone is the only ore no recipe uses).
 - **Pickaxes** - every pickaxe you've bought or crafted, with the equipped one marked.
 - **Tools** - consumables (Dynamite, Mega Bomb, Diamond Drill, Depth Scanner, Lucky Charm) you can spend in a `/mine dig` session.
 
 ## Crafting
 
-Craft-only pickaxes (Obsidian → Omniversal) need specific ores plus a dollar cost. Examples:
+Crafting needs specific ores plus a dollar cost. Everything from the Iron Pickaxe up is craftable - the early tiers use ordinary ores you pick up on the surface, so you can craft from your very first session. Obsidian → Omniversal are **craft-only** and can't be bought at all:
 
 | Pickaxe | Required ores | Cost |
 |---|---|---|
@@ -47,8 +50,8 @@ Buyable pickaxes (Iron, Steel, Gold, Platinum, Diamond) can also be crafted at l
 
 ## Notes
 
-- **Selling is irreversible** - once sold, ores convert to money and disappear from inventory.
-- Crafting ores accumulate - keep mining until you have enough for the next tier.
+- **Selling is irreversible** - once sold, ores convert to money and disappear from inventory. Check the ⚒️ markers before using **Sell All**.
+- Ores accumulate across sessions - keep mining until you have enough for the next tier.
 - Equipping is instant; it doesn't consume the pickaxe.
 - See [`/mine shop`](shop.md) to buy pickaxes with money instead of crafting.
 - See [`/mine profile`](profile.md) for level/XP and equipped pickaxe overview.

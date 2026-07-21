@@ -48,7 +48,7 @@ You can fail **one** phase and still complete the heist. Two failures and the jo
 ## Notes
 
 - **Min entry:** $10,000.
-- **Max entry:** $10 trillion.
+- **Max entry:** $100 trillion.
 - **Cooldown:** 15 minutes on win, 10 minutes on loss. Shared with `/heist` (multiplayer).
 - **Daily limit:** counts toward the shared heist limit (4 for non-Patreon, up to 17 max). See [overview](index.md#daily-limits).
 - **Tax:** same as multiplayer heist - 20% non-Patreon down to 0% Ultimate+.

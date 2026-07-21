@@ -32,7 +32,7 @@ This is the cleanest game in the casino - no bonus rounds, no scaling multiplier
 ## Limits
 
 - **Min bet:** $10,000
-- **Max bet:** $50 trillion (`/coinflip` overrides the standard $1T limit)
+- **Max bet:** $100 trillion (`/coinflip` overrides the standard $1T limit)
 
 ## Notes
 

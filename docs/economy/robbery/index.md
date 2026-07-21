@@ -7,7 +7,7 @@ Steal directly from other players - but lose big if you're caught. The robbery s
 When you target another player with [`/rob user`](rob.md):
 
 - **Stake = 50% of the target's wallet balance.** You need that much in your own wallet just to attempt the robbery.
-- **Success chance: 35%.**
+- **Success chance: 43.33%.**
 - **On success:** you take the stake (minus 2% lottery tax, minus 15% extra if you're in anonymous mode).
 - **On failure:** you lose the stake amount as a fine, plus the lottery tax.
 - **Either way:** both you and the target are **payment-blocked for 30 minutes** - neither of you can use [`/pay`](../money-management/pay.md) during that window.

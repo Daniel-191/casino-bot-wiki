@@ -150,7 +150,8 @@ Top 100 delivery drivers across the bot.
 
 ### What it shows
 
-- Ranking by **prestige**, then **level**, then current XP.
+- Ranking by **prestige**, then **level**, then **total deliveries**, then current XP.
+- Once you're capped at level 200, total deliveries is what separates you from everyone else at the cap.
 - Each row: rank, name, level (+ prestige tag if any), total earnings, total deliveries.
 - Your personal rank is shown in the footer.
 - Paginated 10 per page (⬅️/➡️ buttons, 5-minute timeout).
