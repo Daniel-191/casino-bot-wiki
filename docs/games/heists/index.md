@@ -7,7 +7,7 @@ Big-money cooperative jobs (and a faster solo variant). Pick a location, set the
 Two modes:
 
 - [`/heist`](heist.md) - **Multiplayer.** Host a job in a channel, players join with the same entry fee, the host picks a location, then the bot rolls success and splits the pot.
-- [`/solo-heist`](solo-heist.md) - **Solo.** Three-phase one-player heist. Higher base success (77%), smaller payout multiplier (1.5×–1.8×), shorter cooldown.
+- [`/solo-heist`](solo-heist.md) - **Solo.** Three-phase one-player heist. Higher base success (68%), smaller payout multiplier (1.20×–1.40×), shorter cooldown.
 
 Both modes count toward the **same daily heist limit** and share the same cooldown timer.
 
