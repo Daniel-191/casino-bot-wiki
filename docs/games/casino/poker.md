@@ -36,18 +36,18 @@ Multipliers are paid on win (in addition to your bet returned):
 
 | Hand | Multiplier | Notes |
 |---|---|---|
-| Royal Flush | 40× | The jackpot |
-| Straight Flush | 20× | |
-| Four of a Kind | 6.5× | |
-| Full House | 4× | |
-| Flush | 2.5× | |
-| Straight | 2× | |
-| Three of a Kind | 1.5× | |
-| Two Pair | 1.1× | Slight profit |
-| Pair | 0.85× | Slight loss even on win |
-| High Card | 0.5× | Half your bet back |
+| Royal Flush | 60× | The jackpot |
+| Straight Flush | 25× | |
+| Four of a Kind | 6× | |
+| Full House | 2.8× | |
+| Flush | 1.8× | |
+| Straight | 1.2× | |
+| Three of a Kind | 0.8× | |
+| Two Pair | 0.3× | Small win |
+| Pair | 0.1× | Small win |
+| High Card | 0× | Bet returned, no profit |
 
-So a **Royal Flush** on a $100K bet pays $4M profit ($4.1M total return).
+So a **Royal Flush** on a $100K bet pays $6M profit ($6.1M total return). The big hands stay exciting, while the frequent low hands pay small — poker runs a modest house edge overall.
 
 ## Tie / loss
 
