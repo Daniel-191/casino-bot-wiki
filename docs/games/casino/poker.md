@@ -41,13 +41,13 @@ Multipliers are paid on win (in addition to your bet returned):
 | Four of a Kind | 6× | |
 | Full House | 2.8× | |
 | Flush | 1.8× | |
-| Straight | 1.2× | |
-| Three of a Kind | 0.8× | |
-| Two Pair | 0.3× | Small win |
-| Pair | 0.1× | Small win |
-| High Card | 0× | Bet returned, no profit |
+| Straight | 1.4× | |
+| Three of a Kind | 1× | |
+| Two Pair | 0.45× | |
+| Pair | 0.3× | |
+| High Card | 0.2× | Scrappiest win |
 
-So a **Royal Flush** on a $100K bet pays $6M profit ($6.1M total return). The big hands stay exciting, while the frequent low hands pay small — poker runs a modest house edge overall.
+So a **Royal Flush** on a $100K bet pays $6M profit ($6.1M total return). The big hands stay exciting, and every win — even a high card — now turns a profit. Poker sits at roughly a 50% win rate with a modest house edge overall.
 
 ## Tie / loss
 
@@ -58,7 +58,7 @@ So a **Royal Flush** on a $100K bet pays $6M profit ($6.1M total return). The bi
 
 - **Cooldown:** 3 seconds.
 - **Turn timer:** 120 seconds to finalize your discards. Auto-resolves with all cards kept on timeout.
-- **Dealer advantage:** ~30% chance the dealer is given a slightly favored hand for the comparison.
+- **Dealer advantage:** ~35% chance the dealer is given a favored hand for the comparison. Only applies when your hand is below a full house — strong hands are always compared against a fair random dealer hand.
 - **Single deck** - your discards and dealer's hand are dealt from the same shuffled remainder.
 - "Play Again" button appears after each hand for fast re-rolls at the same bet.
 - Game errors auto-refund the bet.
