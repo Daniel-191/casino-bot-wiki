@@ -37,8 +37,8 @@ Plus a summary line:
 |---|---|
 | **Speed boost** | Cuts grow time by X hours |
 | **Speed penalty** | Adds X hours to grow time |
-| **Profit boost** | Adds X% to sell price |
-| **Profit penalty** | Subtracts X% from sell price |
+| **Profit boost** | Adds X% to your profit margin |
+| **Profit penalty** | Subtracts X% from your profit margin |
 
 Rarities range from common buffs to legendary jackpot events like **Harvest Festival** (massive profit boost across all farmers).
 
