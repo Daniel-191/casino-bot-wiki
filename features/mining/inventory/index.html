@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Complete guide for Paradise Bot - Discord's premier gambling bot">
+        <meta name="description" content="Complete guide for Paradise Bot">
       
       
         <meta name="author" content="mal023">
@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/paradise.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -5144,24 +5144,26 @@
 <h1 id="mine-inventory">/mine inventory</h1>
 <p>View your collected ores, sell them for money, or craft and equip pickaxes.</p>
 <h2 id="description">Description</h2>
-<p>Your mining backpack. Shows every ore you've extracted but not yet sold, plus crafting ores reserved for pickaxe recipes. From here you can:</p>
+<p>Your mining backpack. Every ore you extract lands here and stays until you sell it or spend it on a recipe - <strong>mining never auto-sells anything</strong>. From here you can:</p>
 <ul>
-<li><strong>Sell ores</strong> - convert all (or selected ores) to money at their sell values.</li>
-<li><strong>Craft pickaxes</strong> - spend the right ores + money to build a craft-only pickaxe.</li>
+<li><strong>Sell Ores</strong> - pick which ore stacks to convert to money, keeping recipe materials.</li>
+<li><strong>Sell All</strong> - convert your entire backpack to money in one click.</li>
+<li><strong>Craft pickaxes</strong> - spend the right ores + money to build a pickaxe.</li>
 <li><strong>Equip pickaxes</strong> - switch to any pickaxe you own.</li>
 </ul>
+<p>Each ore stack shows the money it's worth. That figure is the sum of the values the ores rolled when you mined them, so your pickaxe, perk and ability bonuses are already baked in - saving an ore for crafting never loses you value.</p>
 <h2 id="usage">Usage</h2>
 <p><code>/mine inventory</code></p>
 <h2 id="examples">Examples</h2>
 <p><code>/mine inventory</code></p>
 <h2 id="what-it-shows">What it shows</h2>
 <ul>
-<li><strong>Crafting Ores</strong> - coal, iron, copper, silver, gold, sapphire, obsidian, ruby, emerald, fire gem, lava crystal, platinum, mythril, dragon stone, star metal, core fragment, stardust, crystal, void shard, aether crystal, singularity.</li>
+<li><strong>Ores</strong> - every ore you're holding, with its quantity and total sell value. Ores marked ⚒️ are required by at least one crafting recipe (stone is the only ore no recipe uses).</li>
 <li><strong>Pickaxes</strong> - every pickaxe you've bought or crafted, with the equipped one marked.</li>
 <li><strong>Tools</strong> - consumables (Dynamite, Mega Bomb, Diamond Drill, Depth Scanner, Lucky Charm) you can spend in a <code>/mine dig</code> session.</li>
 </ul>
 <h2 id="crafting">Crafting</h2>
-<p>Craft-only pickaxes (Obsidian → Omniversal) need specific ores plus a dollar cost. Examples:</p>
+<p>Crafting needs specific ores plus a dollar cost. Everything from the Iron Pickaxe up is craftable - the early tiers use ordinary ores you pick up on the surface, so you can craft from your very first session. Obsidian → Omniversal are <strong>craft-only</strong> and can't be bought at all:</p>
 <table>
 <thead>
 <tr>
@@ -5236,8 +5238,8 @@
 <p>Buyable pickaxes (Iron, Steel, Gold, Platinum, Diamond) can also be crafted at lower cost.</p>
 <h2 id="notes">Notes</h2>
 <ul>
-<li><strong>Selling is irreversible</strong> - once sold, ores convert to money and disappear from inventory.</li>
-<li>Crafting ores accumulate - keep mining until you have enough for the next tier.</li>
+<li><strong>Selling is irreversible</strong> - once sold, ores convert to money and disappear from inventory. Check the ⚒️ markers before using <strong>Sell All</strong>.</li>
+<li>Ores accumulate across sessions - keep mining until you have enough for the next tier.</li>
 <li>Equipping is instant; it doesn't consume the pickaxe.</li>
 <li>See <a href="../shop/"><code>/mine shop</code></a> to buy pickaxes with money instead of crafting.</li>
 <li>See <a href="../profile/"><code>/mine profile</code></a> for level/XP and equipped pickaxe overview.</li>
@@ -5302,7 +5304,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.path", "navigation.top", "navigation.indexes", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../../javascripts/toc-scroll.js"></script>
       

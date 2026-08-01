@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Complete guide for Paradise Bot - Discord's premier gambling bot">
+        <meta name="description" content="Complete guide for Paradise Bot">
       
       
         <meta name="author" content="mal023">
@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/paradise.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -5234,8 +5234,17 @@
 <li>Lucky Charm tool (+25% rare chance) if active</li>
 <li>Roll a sell value within the ore's range, multiplied by pickaxe + perk <strong>value bonus</strong>.</li>
 <li>Calculate XP based on rarity, multiplied by pickaxe + perk <strong>XP bonus</strong>.</li>
-<li>Award everything to your account; level-up happens immediately.</li>
+<li>XP is awarded immediately (level-ups happen mid-session), and the ore goes
+   into your inventory with its rolled value banked to it.</li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Ores are not auto-sold</p>
+<p>Mining never pays money directly. Every ore lands in your inventory carrying
+the value it rolled - bonuses from your pickaxe, perks, Golden Touch and the
+donor Mine All are locked in at that moment. You collect the money when you
+sell it in <a href="../inventory/"><code>/mine inventory</code></a>, so holding an ore for a recipe
+never costs you value.</p>
+</div>
 <h2 id="cooldown">Cooldown</h2>
 <p>The mining cooldown is shared across the bot's general action system - Patreon donators get a reduced cooldown.</p>
 <h2 id="session-limits">Session limits</h2>
@@ -5317,7 +5326,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.path", "navigation.top", "navigation.indexes", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../../javascripts/toc-scroll.js"></script>
       

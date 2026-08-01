@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Complete guide for Paradise Bot - Discord's premier gambling bot">
+        <meta name="description" content="Complete guide for Paradise Bot">
       
       
         <meta name="author" content="mal023">
@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/paradise.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -5166,8 +5166,8 @@
 <h1 id="solo-heist">/solo-heist</h1>
 <p>Run a heist on your own - higher base success rate than multiplayer, smaller payout multiplier, no need to wait for a crew.</p>
 <h2 id="description">Description</h2>
-<p>A three-phase solo heist (Infiltration → Vault Access → Escape) at a randomly-chosen location. Each phase rolls independently with success chance starting at <strong>77%</strong> and dropping by <strong>3%</strong> per phase as you go deeper. You can fail <strong>one phase</strong> and still succeed; fail two and the heist is busted.</p>
-<p>On success: payout = <code>entry_fee × (1.5 to 1.8 random multiplier)</code>, minus tax.
+<p>A three-phase solo heist (Infiltration → Vault Access → Escape) at a randomly-chosen location. Each phase rolls independently with success chance starting at <strong>68%</strong> and dropping by <strong>6%</strong> per phase as you go deeper. You can fail <strong>one phase</strong> and still succeed; fail two and the heist is busted. Overall that works out to roughly a <strong>66% chance</strong> of completing the job.</p>
+<p>On success: payout = <code>entry_fee × (1.20 to 1.40 random multiplier)</code>, minus tax on the winnings only (your entry fee is never taxed), so a successful heist is always a net profit.
 On failure: you lose your entire entry fee.</p>
 <p>Solo heists count toward the same daily limit as multiplayer heists, but resolve faster (no recruiting, no joinable lobby) so they're the better option when you want quick action.</p>
 <h2 id="required-fields">Required Fields</h2>
@@ -5201,18 +5201,18 @@ On failure: you lose your entire entry fee.</p>
 <tbody>
 <tr>
 <td>Infiltration</td>
-<td>77%</td>
-<td>77%</td>
+<td>68%</td>
+<td>68%</td>
 </tr>
 <tr>
 <td>Vault Access</td>
-<td>77%</td>
-<td>74%</td>
+<td>68%</td>
+<td>62%</td>
 </tr>
 <tr>
 <td>Escape</td>
-<td>77%</td>
-<td>71%</td>
+<td>68%</td>
+<td>56%</td>
 </tr>
 </tbody>
 </table>
@@ -5220,10 +5220,10 @@ On failure: you lose your entire entry fee.</p>
 <h2 id="notes">Notes</h2>
 <ul>
 <li><strong>Min entry:</strong> $10,000.</li>
-<li><strong>Max entry:</strong> $10 trillion.</li>
+<li><strong>Max entry:</strong> $25 trillion.</li>
 <li><strong>Cooldown:</strong> 15 minutes on win, 10 minutes on loss. Shared with <code>/heist</code> (multiplayer).</li>
 <li><strong>Daily limit:</strong> counts toward the shared heist limit (4 for non-Patreon, up to 17 max). See <a href="../#daily-limits">overview</a>.</li>
-<li><strong>Tax:</strong> same as multiplayer heist - 20% non-Patreon down to 0% Ultimate+.</li>
+<li><strong>Tax:</strong> 20% non-Patreon down to 0% Ultimate+, same rates as the multiplayer heist. Unlike multiplayer, solo tax applies to the winnings above your entry fee, not the whole payout.</li>
 <li>Solo heists log to your stats under location "solo" - see <a href="../heist-stats/"><code>/heist-stats</code></a>.</li>
 </ul>
 
@@ -5286,7 +5286,7 @@ On failure: you lose your entire entry fee.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.path", "navigation.top", "navigation.indexes", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../../javascripts/toc-scroll.js"></script>
       

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Complete guide for Paradise Bot - Discord's premier gambling bot">
+        <meta name="description" content="Complete guide for Paradise Bot">
       
       
         <meta name="author" content="mal023">
@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../assets/paradise.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -4917,6 +4917,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Crops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#which-crop-should-i-plant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which crop should I plant?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -5045,12 +5062,12 @@
 <ol>
 <li>Run <strong><code>/farming</code></strong> to open your farm.</li>
 <li>Click <strong>Plant</strong> to pick a crop, choose how many to plant, optionally apply fertilizer, and pick which slot(s).</li>
-<li>Wait - every crop has its own real-time timer (27 hours for wheat up to 57 hours for diamond melon).</li>
+<li>Wait - every crop has its own real-time timer (15 minutes for a sprout up to 36 hours for diamond melon).</li>
 <li>Once ready, click <strong>Harvest</strong> to collect your money.</li>
 <li>Optionally <strong>Replant</strong> to refill the same slots with the same crops + fertilizers in one click.</li>
 </ol>
 <h2 id="crops">Crops</h2>
-<p>11 crop tiers, each with a base price, sell price, and grow time. Profit margins range from 3% (corn) to 8% (watermelon, diamond melon):</p>
+<p>12 crop tiers, each with a base price, sell price, and grow time:</p>
 <table>
 <thead>
 <tr>
@@ -5064,119 +5081,143 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Beginner</strong></td>
+<td><strong>Starter</strong></td>
+<td>Sprout</td>
+<td>$10k</td>
+<td>$12.5k</td>
+<td>15 min</td>
+<td>25%</td>
+</tr>
+<tr>
+<td></td>
+<td>Lettuce</td>
+<td>$75k</td>
+<td>$91.5k</td>
+<td>30 min</td>
+<td>22%</td>
+</tr>
+<tr>
+<td></td>
 <td>Wheat</td>
-<td>$5M</td>
-<td>$5.2M</td>
-<td>27 h</td>
-<td>~4%</td>
+<td>$500k</td>
+<td>$600k</td>
+<td>1 h</td>
+<td>20%</td>
+</tr>
+<tr>
+<td><strong>Field</strong></td>
+<td>Carrot</td>
+<td>$3M</td>
+<td>$3.54M</td>
+<td>2 h</td>
+<td>18%</td>
 </tr>
 <tr>
 <td></td>
 <td>Corn</td>
-<td>$20M</td>
-<td>$20.6M</td>
-<td>29 h</td>
-<td>~3%</td>
-</tr>
-<tr>
-<td></td>
-<td>Carrot</td>
-<td>$10M</td>
-<td>$10.35M</td>
-<td>28 h</td>
-<td>~3.5%</td>
-</tr>
-<tr>
-<td><strong>Mid-tier</strong></td>
-<td>Potato</td>
 <td>$15M</td>
-<td>$15.75M</td>
-<td>31 h</td>
-<td>~5%</td>
+<td>$17.25M</td>
+<td>3 h</td>
+<td>15%</td>
 </tr>
 <tr>
 <td></td>
+<td>Potato</td>
+<td>$75M</td>
+<td>$84M</td>
+<td>4 h</td>
+<td>12%</td>
+</tr>
+<tr>
+<td><strong>Orchard</strong></td>
 <td>Tomato</td>
-<td>$40M</td>
-<td>$42.4M</td>
-<td>32 h</td>
-<td>~6%</td>
+<td>$400M</td>
+<td>$440M</td>
+<td>6 h</td>
+<td>10%</td>
 </tr>
 <tr>
 <td></td>
 <td>Pumpkin</td>
-<td>$150M</td>
-<td>$159M</td>
-<td>34 h</td>
-<td>~6%</td>
+<td>$2B</td>
+<td>$2.16B</td>
+<td>8 h</td>
+<td>8%</td>
 </tr>
 <tr>
-<td><strong>High-tier</strong></td>
+<td><strong>Estate</strong></td>
 <td>Grapes</td>
-<td>$1.2B</td>
-<td>$1.272B</td>
-<td>38 h</td>
-<td>~6%</td>
+<td>$10B</td>
+<td>$10.6B</td>
+<td>12 h</td>
+<td>6%</td>
 </tr>
 <tr>
 <td></td>
 <td>Watermelon</td>
-<td>$5B</td>
-<td>$5.4B</td>
-<td>41 h</td>
-<td>~8%</td>
+<td>$50B</td>
+<td>$52.25B</td>
+<td>16 h</td>
+<td>4.5%</td>
 </tr>
 <tr>
-<td><strong>Premium</strong></td>
+<td><strong>Mythic</strong></td>
 <td>Golden Apple</td>
-<td>$20B</td>
-<td>$20.8B</td>
-<td>49 h</td>
-<td>~4%</td>
+<td>$250B</td>
+<td>$257.5B</td>
+<td>24 h</td>
+<td>3%</td>
 </tr>
 <tr>
 <td></td>
 <td>Diamond Melon</td>
-<td>$100B</td>
-<td>$108B</td>
-<td>57 h</td>
-<td>~8%</td>
+<td>$1T</td>
+<td>$1.02T</td>
+<td>36 h</td>
+<td>2%</td>
 </tr>
 </tbody>
 </table>
-<p>Profits look small per crop - but you can plant <strong>up to 100 crops per slot</strong>, and slots run in parallel.</p>
+<h3 id="which-crop-should-i-plant">Which crop should I plant?</h3>
+<p>Cheap crops pay a <strong>higher return per hour</strong>, expensive crops pay <strong>more per crop slot</strong>. Since your farm is capped at 300 crops (3 slots × 100), the trade-off is real:</p>
+<ul>
+<li><strong>Short on money?</strong> Plant lower tiers. They turn over fast and grow your bankroll quickly - a sprout returns 25% every 15 minutes.</li>
+<li><strong>Short on time?</strong> Plant higher tiers. A diamond melon only needs you once every 36 hours.</li>
+<li><strong>Filling the whole farm?</strong> The best crop is roughly the highest tier you can afford 300 of. Past that point you're wasting slots on cheap crops.</li>
+</ul>
+<p>No crop is a dead end - each tier beats the one below it on profit per slot, and the one above it on profit per hour.</p>
 <h2 id="fertilizers">Fertilizers</h2>
-<p>Optional speed-up purchased per planting:</p>
+<p>Optional speed-up purchased per planting. Cost is a <strong>share of the crop's own profit</strong>, so it scales with whatever you're growing and is always worth using if you'll be back in time to harvest:</p>
 <table>
 <thead>
 <tr>
 <th>Fertilizer</th>
-<th>Cost / crop</th>
+<th>Cost</th>
 <th>Speed boost</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Basic</strong></td>
-<td>$10M</td>
+<td>12% of crop profit</td>
 <td>20% faster (0.8× grow time)</td>
 </tr>
 <tr>
 <td><strong>Super</strong></td>
-<td>$100M</td>
+<td>30% of crop profit</td>
 <td>40% faster (0.6×)</td>
 </tr>
 <tr>
 <td><strong>Mega</strong></td>
-<td>$2B</td>
+<td>50% of crop profit</td>
 <td>60% faster (0.4×)</td>
 </tr>
 </tbody>
 </table>
-<p>Fertilizer cost is per-crop, paid up front when planting.</p>
+<p>For example, mega fertilizer on wheat ($100k profit) costs $50k per crop and drops the timer from 1 h to 24 min.</p>
+<p>Fertilizer only pays off if you actually harvest sooner - if you plant overnight and collect in the morning, skip it.</p>
 <h2 id="patreon-perks">Patreon perks</h2>
-<p>Donator tiers stack a profit boost and a grow-time speed boost on every crop:</p>
+<p>Donator tiers stack a profit boost and a grow-time speed boost on every crop. The profit boost multiplies your <strong>profit</strong> - the margin between what you paid for the seed and what it sells for - not the gross sale price:</p>
 <table>
 <thead>
 <tr>
@@ -5258,14 +5299,15 @@
 </tr>
 <tr>
 <td><strong>Profit boost</strong></td>
-<td>Increases sell price by %</td>
+<td>Increases your profit by %</td>
 </tr>
 <tr>
 <td><strong>Profit penalty</strong></td>
-<td>Decreases sell price by %</td>
+<td>Decreases your profit by %</td>
 </tr>
 </tbody>
 </table>
+<p>Like Patreon boosts, event effects scale your <strong>profit margin</strong>, not the gross sale price - so even the worst run of penalty events can flatten a harvest's profit but will never sell a crop for less than you paid for the seed.</p>
 <p>Events only affect crops that were <strong>already planted</strong> when they trigger - empty fields = no impact. Use <a href="events/"><code>/farming-events</code></a> to see recent events and whether they hit your crops.</p>
 <h2 id="commands">Commands</h2>
 <ul>
@@ -5342,7 +5384,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.path", "navigation.top", "navigation.indexes", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../javascripts/toc-scroll.js"></script>
       
