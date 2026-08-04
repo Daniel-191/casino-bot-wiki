@@ -44,10 +44,9 @@ A heist runs as a series of phases. Each phase picks a random crew member and ro
 | | Phases | Failures allowed |
 |---|---|---|
 | All locations except Paradise Vault | 4 | 1–2, rising with crew size |
-| **Paradise Vault**, 2–8 players | 5 | 2 |
-| **Paradise Vault**, 9–15 players | 6 | 2 |
+| **Paradise Vault** | 5 | 2 |
 
-The Paradise Vault runs a longer job and its failure allowance does **not** grow with crew size, so bigger premium crews carry more risk, not less.
+The Paradise Vault runs a longer job, and its failure allowance stays at 2 no matter how big the crew is - bringing more people raises your payout, not your safety net.
 
 ## Notes
 
