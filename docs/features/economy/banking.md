@@ -30,7 +30,7 @@ Large bank accounts may be taxed periodically:
 - **Tax rate:** 5% of bank balance
 - **Purpose:** Funds the community lottery system
 
-Inactive users (2+ days without activity) face a 2% tax on wallet balance.
+Inactive users (2+ days without activity) face a 2% tax on wallet balance. Unlike the bank tax, this money is **burned** — permanently removed from the economy rather than paid back out through the lottery.
 
 ## Bank Vault Sizes
 
