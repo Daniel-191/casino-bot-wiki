@@ -5281,7 +5281,7 @@
 <li><strong>Stake:</strong> 50% of target's wallet balance. You must have that much in your own wallet to attempt.</li>
 <li><strong>Success chance:</strong> 43.33%.</li>
 <li><strong>Minimum balance to attempt:</strong> $1,000 in your wallet.</li>
-<li><strong>On success:</strong> you receive (stake − 2% tax − 15% anonymous tax if enabled). Target loses the full stake.</li>
+<li><strong>On success:</strong> you receive (stake − 2% tax − 15% anonymous tax if enabled). Target loses the full stake. Tax is burned, not paid into any pool.</li>
 <li><strong>On failure:</strong> you lose the stake (capped at your wallet) as a fine. Target keeps their money.</li>
 <li><strong>Both outcomes:</strong> 30-minute payment block applied to both players (no <code>/pay</code> either direction during that window).</li>
 </ul>
@@ -5292,7 +5292,7 @@
 <p><strong>Usage:</strong> <code>/rob anonymous</code></p>
 <p><strong>Behavior:</strong> Toggles between on and off.</p>
 <ul>
-<li><strong>When enabled:</strong> victims see "Anonymous Robber 🎭" instead of your name. Costs an <strong>extra 15% tax</strong> on robbery profits (paid to lottery pool).</li>
+<li><strong>When enabled:</strong> victims see "Anonymous Robber 🎭" instead of your name. Costs an <strong>extra 15% tax</strong> on robbery profits (burned).</li>
 <li><strong>When disabled:</strong> standard 2% tax only; victims see your name.</li>
 </ul>
 <p><strong>Cooldown:</strong> 5 seconds.</p>

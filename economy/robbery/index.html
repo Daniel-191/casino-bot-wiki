@@ -5024,15 +5024,15 @@
 <ul>
 <li><strong>Stake = 50% of the target's wallet balance.</strong> You need that much in your own wallet just to attempt the robbery.</li>
 <li><strong>Success chance: 43.33%.</strong></li>
-<li><strong>On success:</strong> you take the stake (minus 2% lottery tax, minus 15% extra if you're in anonymous mode).</li>
-<li><strong>On failure:</strong> you lose the stake amount as a fine, plus the lottery tax.</li>
+<li><strong>On success:</strong> you take the stake (minus a 2% robbery tax, minus 15% extra if you're in anonymous mode). The tax is <strong>burned</strong> - removed from the economy entirely.</li>
+<li><strong>On failure:</strong> you lose the stake amount as a fine. No tax on top.</li>
 <li><strong>Either way:</strong> both you and the target are <strong>payment-blocked for 30 minutes</strong> - neither of you can use <a href="../money-management/pay/"><code>/pay</code></a> during that window.</li>
 </ul>
 <p>Targets must be in the <strong>same Discord server</strong> as you, and you must have at least <strong>$1,000</strong> in your wallet to attempt any rob.</p>
 <h2 id="bounty-system">Bounty system</h2>
 <p>You can put a money bounty on another player's head with <a href="rob/#bounty-system"><code>/rob bounty set</code></a>. Anyone who successfully robs (or even fails to rob) the target claims the bounty. Bounties are <strong>per-server</strong> and have an expiry timer (max 7 days). The setter can remove their own bounty for a refund or top it up later.</p>
 <h2 id="anonymous-mode">Anonymous mode</h2>
-<p>Toggle with <a href="rob/#rob-anonymous"><code>/rob anonymous</code></a>. When enabled, victims see "Anonymous Robber 🎭" instead of your name in the rob notification. <strong>Costs an extra 15% tax on profits</strong> (paid to the lottery pool on top of the standard 2%).</p>
+<p>Toggle with <a href="rob/#rob-anonymous"><code>/rob anonymous</code></a>. When enabled, victims see "Anonymous Robber 🎭" instead of your name in the rob notification. <strong>Costs an extra 15% tax on profits</strong> (burned on top of the standard 2%).</p>
 <h2 id="commands">Commands</h2>
 <p>All robbery actions are subcommands of <code>/rob</code>:</p>
 <table>
