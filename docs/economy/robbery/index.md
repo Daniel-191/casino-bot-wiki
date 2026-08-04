@@ -8,8 +8,8 @@ When you target another player with [`/rob user`](rob.md):
 
 - **Stake = 50% of the target's wallet balance.** You need that much in your own wallet just to attempt the robbery.
 - **Success chance: 43.33%.**
-- **On success:** you take the stake (minus 2% lottery tax, minus 15% extra if you're in anonymous mode).
-- **On failure:** you lose the stake amount as a fine, plus the lottery tax.
+- **On success:** you take the stake (minus a 2% robbery tax, minus 15% extra if you're in anonymous mode). The tax is **burned** - removed from the economy entirely.
+- **On failure:** you lose the stake amount as a fine. No tax on top.
 - **Either way:** both you and the target are **payment-blocked for 30 minutes** - neither of you can use [`/pay`](../money-management/pay.md) during that window.
 
 Targets must be in the **same Discord server** as you, and you must have at least **$1,000** in your wallet to attempt any rob.
@@ -20,7 +20,7 @@ You can put a money bounty on another player's head with [`/rob bounty set`](rob
 
 ## Anonymous mode
 
-Toggle with [`/rob anonymous`](rob.md#rob-anonymous). When enabled, victims see "Anonymous Robber 🎭" instead of your name in the rob notification. **Costs an extra 15% tax on profits** (paid to the lottery pool on top of the standard 2%).
+Toggle with [`/rob anonymous`](rob.md#rob-anonymous). When enabled, victims see "Anonymous Robber 🎭" instead of your name in the rob notification. **Costs an extra 15% tax on profits** (burned on top of the standard 2%).
 
 ## Commands
 

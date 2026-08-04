@@ -25,7 +25,7 @@ Attempt to rob another player.
 - **Stake:** 50% of target's wallet balance. You must have that much in your own wallet to attempt.
 - **Success chance:** 43.33%.
 - **Minimum balance to attempt:** $1,000 in your wallet.
-- **On success:** you receive (stake − 2% tax − 15% anonymous tax if enabled). Target loses the full stake.
+- **On success:** you receive (stake − 2% tax − 15% anonymous tax if enabled). Target loses the full stake. Tax is burned, not paid into any pool.
 - **On failure:** you lose the stake (capped at your wallet) as a fine. Target keeps their money.
 - **Both outcomes:** 30-minute payment block applied to both players (no `/pay` either direction during that window).
 
@@ -41,7 +41,7 @@ Toggle whether your identity is hidden from rob victims.
 
 **Behavior:** Toggles between on and off.
 
-- **When enabled:** victims see "Anonymous Robber 🎭" instead of your name. Costs an **extra 15% tax** on robbery profits (paid to lottery pool).
+- **When enabled:** victims see "Anonymous Robber 🎭" instead of your name. Costs an **extra 15% tax** on robbery profits (burned).
 - **When disabled:** standard 2% tax only; victims see your name.
 
 **Cooldown:** 5 seconds.
