@@ -35,7 +35,19 @@ Only **one heist per channel** can be active at a time. You can't host or join a
 | **Federal Vault** | 4–6 | 57% | 2.1× | Hard |
 | **Space Taco Research Facility** | 3–12 | 75% | 3.4× | Medium |
 | **Capital Reserve** | 10–50 | 68% | 3.5× | Very Hard |
-| **Paradise Vault** | 2–15 | 80% | 3.2× | Patreon Exclusive |
+| **Paradise Vault** | 2–15 | 78% | 3.2× | Patreon Exclusive |
+
+## Phases and failure tolerance
+
+A heist runs as a series of phases. Each phase picks a random crew member and rolls against the location's success rate (which drops slightly each phase). The crew has a limited number of failures it can absorb - use one too many and the job is blown.
+
+| | Phases | Failures allowed |
+|---|---|---|
+| All locations except Paradise Vault | 4 | 1–2, rising with crew size |
+| **Paradise Vault**, 2–8 players | 5 | 2 |
+| **Paradise Vault**, 9–15 players | 6 | 2 |
+
+The Paradise Vault runs a longer job and its failure allowance does **not** grow with crew size, so bigger premium crews carry more risk, not less.
 
 ## Notes
 
