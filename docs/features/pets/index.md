@@ -75,10 +75,11 @@ XP sources (base values, +5% per level):
 
 | Level | Title |
 |---|---|
-| **25** | ⭐ EXPERT |
-| **50** | 🏆 MASTER |
-| **100** | ✨ LEGENDARY |
-| **200** | Ultimate Pet |
+| **25** | Expert |
+| **50** | Master |
+| **100** | Legendary |
+| **150** | Ultimate |
+| **200** | Maximum pet achievement |
 
 ## Earnings (work payouts)
 
