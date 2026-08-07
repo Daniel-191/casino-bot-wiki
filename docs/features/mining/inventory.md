@@ -29,24 +29,29 @@ Each ore stack shows the money it's worth. That figure is the sum of the values 
 
 ## Crafting
 
-Crafting needs specific ores plus a dollar cost. Everything from the Iron Pickaxe up is craftable - the early tiers use ordinary ores you pick up on the surface, so you can craft from your very first session. Obsidian → Omniversal are **craft-only** and can't be bought at all:
+Crafting needs specific ores plus a dollar cost. Everything from the Slate Pickaxe up is craftable - the early tiers use ordinary ores you pick up on the surface, so you can craft from your very first session. Bedrock → Titan are **craft-only** and can't be bought at all:
 
 | Pickaxe | Required ores | Cost |
 |---|---|---|
-| **Iron** | 10 iron, 5 coal | $50M |
-| **Steel** | 25 iron, 15 coal, 10 copper | $250M |
-| **Gold** | 20 gold, 15 silver, 5 sapphire | $800M |
-| **Diamond** | 15 diamond, 10 ruby, 10 emerald, 20 gold | $5B |
-| **Obsidian** | 30 obsidian, 15 fire gem, 10 lava crystal | $10B |
-| **Mythril** | 25 mythril, 15 dragon stone, 20 obsidian, 10 fire gem | $20B |
-| **Cosmic** | 25 star metal, 20 core fragment, 30 stardust, 15 dragon stone | $80B |
-| **Transcendent** | 80 stardust, 60 core fragment, 50 star metal, 40 dragon stone | $4T |
-| **Celestial** | 60 void shard, 35 aether crystal, 80 stardust, 10 singularity | $10T |
-| **Singularity** | 30 singularity, 60 aether crystal, 80 void shard | $25T |
-| **Infinity** | 60 singularity, 100 aether crystal, 120 void shard, 100 stardust | $60T |
-| **Omniversal** | 120 singularity, 150 aether crystal, 150 void shard, 150 stardust | $150T |
+| **Slate** | 10 iron, 5 coal | $50M |
+| **Granite** | 25 iron, 15 coal, 10 copper | $250M |
+| **Basalt** | 20 gold, 15 silver, 5 sapphire | $800M |
+| **Quartz** | 10 platinum, 25 gold, 5 diamond | $2B |
+| **Obsidian** | 15 diamond, 10 ruby, 10 emerald, 20 gold | $5B |
+| **Bedrock** | 30 obsidian, 15 fire gem, 10 lava crystal | $10B |
+| **Cinder** | 25 mythril, 15 dragon stone, 20 obsidian, 10 fire gem | $20B |
+| **Ember** | 30 mythril, 20 dragon stone, 15 star metal, 10 core fragment | $40B |
+| **Magma** | 25 star metal, 20 core fragment, 30 stardust, 15 dragon stone | $80B |
+| **Caldera** | 40 stardust, 30 star metal, 25 core fragment, 20 dragon stone | $200B |
+| **Mantle** | 50 stardust, 35 core fragment, 30 star metal, 25 mythril | $500B |
+| **Core** | 60 stardust, 45 core fragment, 40 star metal, 30 dragon stone | $1.5T |
+| **Forge** | 80 stardust, 60 core fragment, 50 star metal, 40 dragon stone | $4T |
+| **Crucible** | 60 void shard, 35 aether crystal, 80 stardust, 10 singularity | $10T |
+| **Furnace** | 30 singularity, 60 aether crystal, 80 void shard | $25T |
+| **Inferno** | 60 singularity, 100 aether crystal, 120 void shard, 100 stardust | $60T |
+| **Titan** | 120 singularity, 150 aether crystal, 150 void shard, 150 stardust | $150T |
 
-Buyable pickaxes (Iron, Steel, Gold, Platinum, Diamond) can also be crafted at lower cost.
+Buyable pickaxes (Slate, Granite, Basalt, Quartz, Obsidian) can also be crafted at lower cost.
 
 ## Notes
 
