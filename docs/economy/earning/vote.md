@@ -11,6 +11,7 @@ Opens the vote panel with buttons for each supported listing site. Each site has
 - Cuts your `/rob` cooldown by **50%**
 - Awards **1 scratch card**
 - Voting on **both Top.gg + DBL within 24h** grants a **+2 daily heist limit** bonus
+- Completes your daily **Vote for the bot 1 time** [quest](../../features/quests/quests.md), which is in every daily set
 
 Maintaining the streak (vote at least once every 12h on either site) compounds into the streak multiplier that boosts every recurring reward - see the [Earning Money index](index.md#vote-streak-multiplier) for the full multiplier table.
 
@@ -35,4 +36,5 @@ Each site is on its own 12-hour cooldown.
 - **Milestone bonuses** are paid on top of streak rewards at days 7, 30, 90, 180, and 365 (2×, 10×, 30×, 60×, 150× of base, respectively).
 - **Patreon vote multiplier** is separate from the DWM multiplier: T1 = 1.0×, T2 = 1.5×, T3 = 2×, T4 = 3×, T5 = 4×, T6 = 5×, T7 = 6.5×, T8 = 15×.
 - See [`/vote-milestones`](vote-milestones.md) for streak-tier permanent unlocks (property protection, extra slots).
+- **Quest progress** counts from any of the three sites. The daily quest needs one vote, so a second site adds nothing to it that day - but the weekly quest counts every vote, so voting on all three sites clears its 5 votes in under two days.
 - You can toggle a vote-ready DM reminder from the same panel.
