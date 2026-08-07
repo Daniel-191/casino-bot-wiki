@@ -6,8 +6,8 @@ Buy pickaxes with money (no ores needed) or stock up on consumable tools that bo
 
 The mining store. Two sections:
 
-- **Pickaxes** - any of the buyable tiers (Wooden through Diamond) can be purchased outright with money. Higher tiers require both a dollar price and the level requirement.
-- **Consumable tools** - single-use boosters that apply effects during a `/mine dig` session.
+- **Pickaxes** - any of the buyable tiers (Flint through Obsidian) can be purchased outright with money. Higher tiers require both a dollar price and the level requirement.
+- **Consumable tools** - single-use boosters that apply effects during a `/mine dig` session. These can be bought in bulk (up to 100 at a time).
 
 ## Usage
 
@@ -21,14 +21,14 @@ The mining store. Two sections:
 
 | Pickaxe | Level | Price |
 |---|---|---|
-| 🪓 **Wooden** | 1 | Free starter |
-| ⛏️ **Iron** | 5 | $500M |
-| 🔨 **Steel** | 15 | $2.5B |
-| ✨ **Gold** | 25 | $8B |
-| ⬜ **Platinum** | 35 | $18B |
-| 💎 **Diamond** | 45 | $45B |
+| 🪨 **Flint** | 1 | Free starter |
+| ⬛ **Slate** | 5 | $500M |
+| 🏔️ **Granite** | 15 | $2.5B |
+| 🧱 **Basalt** | 25 | $8B |
+| ⚪ **Quartz** | 35 | $18B |
+| 🖤 **Obsidian** | 45 | $45B |
 
-Pickaxes from Obsidian (lvl 55) onwards are **craft-only** - you can't buy them here, see [`/mine inventory`](inventory.md) for crafting recipes.
+Pickaxes from Bedrock (lvl 55) onwards are **craft-only** - you can't buy them here, see [`/mine inventory`](inventory.md) for crafting recipes.
 
 ## Consumable tools
 
@@ -41,6 +41,16 @@ Pickaxes from Obsidian (lvl 55) onwards are **craft-only** - you can't buy them 
 | 🍀 **Lucky Charm** | $3.5B | 2× rare-ore chance for 10 mines |
 
 Tools stack in your inventory - buy multiple to use across many sessions.
+
+### Buying several at once
+
+After picking a tool you get a quantity row before confirming:
+
+- `-10` `-1` `+1` `+10` adjust the amount (1 to 100 per purchase).
+- **Max** jumps to the largest amount your balance covers.
+- The confirm screen shows unit price, quantity and running total, and **Confirm Purchase** greys out while the total is more than you can afford.
+
+Pickaxes are one-time unlocks, so they're still bought one at a time.
 
 ## Notes
 
