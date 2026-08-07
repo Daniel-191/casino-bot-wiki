@@ -57,6 +57,8 @@ For solo blackjack, see [`/blackjack`](../casino/blackjack.md).
 
 Splits and doubles use full extra bets and pay 1:1.
 
+Doubling down is blocked if it would take a single hand's stake above the max bet, so a max-bet hand can't be doubled. **Play Again** always re-stakes your original bet, not a bet that grew from doubling.
+
 ## Notes
 
 - **Cooldown:** 5 seconds (host).
