@@ -131,6 +131,12 @@ nav:
 
   - Voting System: features/economy/voting.md
 
+  - Quests:
+    - features/quests/index.md
+    - /quests: features/quests/quests.md
+    - Quest Shop: features/quests/shop.md
+    - Quest Reminders: features/quests/reminders.md
+
   - Lottery:
     - features/lottery/index.md
     - /lottery: features/lottery/lottery.md
@@ -210,6 +216,7 @@ nav:
     - /inventory: features/mining/inventory.md
     - /profile: features/mining/profile.md
     - /shop: features/mining/shop.md
+    - Mining Events: features/mining/events.md
 
   - Fishing:
     - features/fishing/index.md
