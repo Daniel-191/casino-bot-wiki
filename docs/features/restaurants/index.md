@@ -11,7 +11,7 @@ An interactive minigame where you run fry deliveries with the Fries shop. Pay sc
 | `/delivery-stats` | View your delivery stats |
 | `/fries-event-status` | Check current global event |
 
-Fries has a **level/XP system** (1–200) with a **prestige** option after capping. Each prestige adds a permanent earnings bonus.
+Fries has a **level/XP system** (1–500) plus 10 delivery **zones** and per-zone **reputation**. A **prestige** bonus (+5% each, max 10) also applies if you have one.
 
 ## Shared systems
 
