@@ -8,7 +8,7 @@ Paradise Bot ties together a wide range of mechanics in one place:
 
 - **16 casino games** - blackjack, poker, slots, roulette, baccarat, dice, crash, tower, minesweeper, plinko, wheel-of-fortune, horse-race, sportsbet, uncrossable, RPS, coinflip.
 - **14 multiplayer games** - battleship, connect4, tic-tac-toe, wordle, fight, coinflip duel, dice duel, russian roulette, buckshot, murder mystery, RPS multiplayer, multiplayer dice, multidice, multiplayer blackjack.
-- **Progression systems** - pets (level 1–200), mining (14 pickaxes / 13 depths), fishing (13 rods / 13 locations), farming (11 crops with real-time growth).
+- **Progression systems** - pets (level 1–200), mining (14 pickaxes / 13 depths), fishing (23 rods / 17 locations), farming (11 crops with real-time growth).
 - **Heists** - co-op multiplayer + solo, with 8 locations and a daily Weekly Major Heist.
 - **Restaurants** - Fries delivery minigame.
 - **Lottery** - daily community drawing fueled by ticket sales and game taxes.
