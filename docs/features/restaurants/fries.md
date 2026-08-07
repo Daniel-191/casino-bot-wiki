@@ -1,13 +1,13 @@
 # Fries
 
-Fry-shop delivery minigame. Pick the right items, navigate to the right area + house, get paid for accuracy and speed. Has its own level/XP/prestige system, upgrades, and global events.
+Fry-shop delivery minigame. Read the address, bag the right items, find the right block and door, get paid. Has its own level/XP/zone/prestige progression, upgrades, and global events.
 
 ## Commands
 
 | Command | Description | Cooldown |
 |---|---|---|
 | [`/fries-in-bag`](#fries-in-bag) | Start a delivery shift | 4s |
-| [`/fries-profile`](#fries-profile) | View level, XP, prestige, unlocks | 4s |
+| [`/fries-profile`](#fries-profile) | View level, XP, zone, reputation, unlocks | 4s |
 | [`/delivery-stats`](#delivery-stats) | View your delivery stats | 4s |
 | [`/fries-event-status`](#fries-event-status) | Check current global event | 10s |
 | [`/leaderboards fries`](#leaderboards-fries) | Top 100 delivery drivers | 4s |
@@ -16,18 +16,16 @@ Fry-shop delivery minigame. Pick the right items, navigate to the right area + h
 
 ## /fries-in-bag
 
-Start a delivery shift. Receive a random order with 2–4 items, put the correct items in the bag, navigate to the correct area, find the right house, and collect payment.
+Start a delivery shift. You get an order, an address, and weather. Bag the right items, drive to the right block, knock on the right door.
 
 ### Description
 
 Each delivery has 4 phases:
 
-1. **Order** - random items shown.
-2. **Bag** - pick the right items (wrong items = penalty).
-3. **Area** - navigate to A, B, C, or D.
-4. **House** - find the right house number.
-
-Bonuses apply for weather, customer type, speed, and any active **global event**. Mistakes cost money.
+1. **Order** - your items and the full address are shown. **This is the only time you see the address.**
+2. **Bag** - pick the right items. A wrong item forfeits **that item's full value**.
+3. **Block** - pick the correct block (A-D).
+4. **Door** - find the right door number (1-9).
 
 ### Usage
 
@@ -35,35 +33,130 @@ Bonuses apply for weather, customer type, speed, and any active **global event**
 
 ### Pay structure
 
-The delivery minigame is more hands-on than fishing, so payouts are tuned to reward each completed run.
+The **order itself is your base pay**. Every item on the menu has a fixed value, and the order's total is what the delivery is worth before multipliers.
 
-- **Base pay** $20M–$45M per delivery, scaled by accuracy (correct bag, correct area, correct house).
-- **Weather bonus** $2M–$5M — bad weather pays more.
-- **Customer tip** scales with customer type and order size ($600K per $ of order value).
-- **Speed bonus** up to $5M for sub-2-minute deliveries.
-- **Special Order** $750M–$1.5B bonus, ~40% chance per delivery.
-- **Level multiplier** up to ~100× at level 200 (applies to the whole payout).
-- **Prestige bonus** +5% per prestige level on top of everything.
-- **Global event multiplier** 3× to 10× when an event is active.
+- **Order value** - the sum of the items' fixed values (this is the bulk of your pay).
+- **Customer tip** - 25% of the order's value, times the customer's tip multiplier.
+- **Weather bonus** - $2M-$5M base; bad weather pays more.
+- **Speed bonus** - up to $5M base for sub-2-minute deliveries. **Every wrong door costs you 30 seconds** against this.
+- **Special Order** - 8% chance, worth **+150% of the order's value**.
+- Everything above is then multiplied by your **payout scale**.
+
+### Payout scale
+
+Your payout scale is the product of four things:
+
+| Axis | Range | How you raise it |
+|---|---|---|
+| **Zone** | ×1 → ×433 | Level up to unlock the next zone |
+| **Level** | ×1 → ×4.6 | Levelling, smoothly, all the way to 500 |
+| **Zone reputation** | ×1 → ×1.30 | Deliver repeatedly *in your current zone* |
+| **Prestige** | ×1 → ×1.50 | +5% per prestige level, max 10 |
+
+Zones do the heavy lifting: each one pays roughly **double** the last, so unlocking a zone is the single biggest jump in the game.
+
+### Menu
+
+There are **10 menu items and they are identical in every zone**. A burger is worth the same base value in the suburbs as it is on the Gold Coast - what changes is the multiplier applied on top.
+
+| Item | Base value | | Item | Base value |
+|---|---|---|---|---|
+| Cupcake | $16.8M | | Hot Dog | $9.6M |
+| Burger | $14.4M | | Donut | $9.6M |
+| Pizza | $14.4M | | Fries | $7.2M |
+| Pancakes | $14.4M | | Ice Cream | $7.2M |
+| | | | Cookies | $7.2M |
+| | | | Soda | $4.8M |
+
+An order is 2-4 random items.
+
+### Penalties
+
+- **Wrong item** - you forfeit that item's **full value** out of the order, plus 1% impatience. This scales with your zone automatically.
+- **Wrong block** - -8% of final earnings, plus 1% per repeat. The correct block is **not** revealed.
+- **Wrong door** - -3% of final earnings, plus 1% per repeat, **and** 30 seconds against your speed bonus.
+- Penalty reduction from level unlocks and the GPS upgrade softens all of these.
 
 ### XP per delivery
 
-Quality matters — perfect deliveries are rewarded most.
+XP depends on **quality and level only** - never on how much you earned, so rich zones don't level you faster.
 
-- **Base XP** by quality: **125** perfect / **90** good / **60** rushed.
-- **+1 XP** per $20M earned on the delivery.
-- **+75 XP** on a Special Order.
+- **Base XP** by quality: **28** perfect (no mistakes at all) / **20** good (right items) / **14** rushed (wrong items).
+- **+17 XP** on a Special Order.
+- The total is multiplied by a **level multiplier** that rises with your zone unlocks — ×1 at level 1, ×2.3 at 25, ×13.8 at 100, ×28 at 200, ×107 at 500.
 - **×2 XP** during a global event.
+
+This is tuned to match mining's and fishing's levelling pace *per hour*, not per
+click. Fries has no cooldown — the **Play Again** button starts the next delivery
+immediately — so a driver runs roughly 430 deliveries an hour where a miner is
+capped at 100 ores per 10 minutes and an angler at one cast per 2.5 seconds. The
+level multiplier follows the same step shape those two get from unlocking deeper
+depths and further locations, rather than a smooth curve.
+
+Expect around **70 hours** of continuous play to level 200, which sits between
+mining (~83 h) and fishing (~67 h). Run
+`python scripts/xp_balance_gauntlet.py` to re-check the comparison after any
+change to ore pools, fish pools, rods, pickaxes, cooldowns, or the base tiers.
 
 ### Active sessions
 
 You can only run **one delivery at a time**. If you have a stuck session, the bot offers a "Clear Session" button.
 
+### Settings
+
+The gear button on the `/fries-in-bag` menu (and on the post-delivery menu) opens your personal display settings. These are **cosmetic only** - they never change pay, penalties or progression. Settings are saved per user and apply from your next delivery.
+
+| Setting | Options | Default |
+|---|---|---|
+| Item Button Labels | Emoji + Text, Emoji Only, Text Only | Emoji + Text |
+| Order Item Values | Show Values, Hide Values | Show Values |
+
+**Item Button Labels** controls the food buttons you press while packing the bag. *Emoji Only* strips the item names off for a compact grid.
+
+**Order Item Values** controls whether the order list on the new-order screen prints what each item is worth.
+
+---
+
+## Zones
+
+You are **always placed in the highest zone your level has unlocked**. There is no zone picker and no way to stay in a lower zone - when you level past a threshold, your next delivery is in the new zone.
+
+Every zone has the **same layout**: 4 blocks (A-D) and 9 doors per block. The number of buttons never grows - the only thing that changes between zones is the pay.
+
+| Zone | Level | Pay | Layout |
+|---|---|---|---|
+| 🏘️ Suburban Blocks | 1 | ×1 | 4 × 9 houses |
+| 🏙️ Downtown Strip | 15 | ×2 | 4 × 9 houses |
+| 🏢 Business District | 30 | ×3.9 | 4 × 9 offices |
+| 🏰 Historic Quarter | 45 | ×7.6 | 4 × 9 doors |
+| ⚓ Riverside Docks | 65 | ×14.9 | 4 × 9 berths |
+| 🏬 Uptown Heights | 85 | ×29.2 | 4 × 9 apartments |
+| 🏡 Luxury Estates | 110 | ×57.2 | 4 × 9 gates |
+| 🌆 Skyline Penthouses | 140 | ×112.4 | 4 × 9 suites |
+| 🏝️ Private Island | 170 | ×220.6 | 4 × 9 villas |
+| 👑 The Gold Coast | 200 | ×433.1 | 4 × 9 estates |
+
+Doors are renamed to suit the zone (houses, suites, villas), but there are always nine of them. The Gold Coast is the last zone; past level 200 your progression comes from the level curve and zone reputation.
+
+## Zone reputation
+
+Every zone tracks its **own** delivery count and converts it into a reputation rank. Each rank is worth **+6% pay in that zone**, and reputation is never lost.
+
+| Rank | Deliveries in that zone | Bonus |
+|---|---|---|
+| R1 | 25 | +6% |
+| R2 | 75 | +12% |
+| R3 | 175 | +18% |
+| R4 | 350 | +24% |
+| R5 | 650 | +30% |
+
+New zones start at R0, but a new zone's base pay is already about double the old one, so moving up is always an immediate gain.
+
 ---
 
 ## /fries-profile
 
-Your delivery career profile - level, XP, prestige, and unlocks.
+Your delivery career profile.
 
 ### Usage
 
@@ -71,14 +164,23 @@ Your delivery career profile - level, XP, prestige, and unlocks.
 
 ### What it shows
 
-- **Level** out of **200** with XP progress bar.
-- **Prestige level** (P1, P2, etc.) - only visible if you've prestiged at least once.
-- **Earnings bonus from prestige** - `prestige_level × PRESTIGE_BONUS_PER_LEVEL` (additive %).
+- **Level** out of **500** with XP progress bar.
+- **Prestige level** (P1, P2, ...) and its bonus, if you have any.
+- **Current zone** - description, pay multiplier, reputation rank and progress to the next rank.
+- **Total payout scale** - the combined multiplier from every axis.
+- **Next zone** and the level it unlocks at.
 - Button to view all unlocks across all levels.
 
-### Prestige
+---
 
-After hitting **level 200**, you can prestige - resets your level back to 1 but adds a permanent earnings bonus on every delivery. Multiple prestiges stack the bonus.
+## Prestige
+
+Prestige grants a permanent **+5% additive** earnings bonus, up to **level 10** (+50% in total). It applies to every delivery and stacks with your zone, zone reputation, level curve and upgrades.
+
+Prestige is shown on your [`/fries-profile`](#fries-profile) as a `P1`, `P2`, … tag next to your level, and is used as a tiebreaker on the [leaderboard](#leaderboards-fries).
+
+!!! note "No prestige command"
+    There is currently no command to prestige. The bonus applies to anyone who already has a prestige level, but it cannot be gained in-game right now.
 
 ---
 
@@ -94,9 +196,8 @@ Lifetime delivery statistics.
 
 - **Total / Successful / Success Rate / Perfect Deliveries**
 - **Total Earned / Total Tips / Avg per Delivery**
-- **Fastest Delivery** time
-- **Favorite Area**
-- **Total Distance** in blocks
+- **Fastest Delivery** time and **Favourite Zone**
+- **Zone Reputation** breakdown - rank and delivery count for every zone you've worked
 - **Active event** indicator (if one is currently running)
 
 ---
@@ -122,7 +223,7 @@ If no event is active, the embed says so and tells you to check back.
 
 ### Event roster
 
-Events are **global** — they affect every player at the same time and fire automatically **twice per day** (every 12 hours). There are **16** events across **5** tiers:
+Events are **global** — they affect every player at the same time and fire automatically **twice per day**, at **04:00 and 16:00 UTC**. There are **16** events across **5** tiers:
 
 | Tier | Multiplier | Examples |
 |---|---|---|
@@ -150,8 +251,7 @@ Top 100 delivery drivers across the bot.
 
 ### What it shows
 
-- Ranking by **prestige**, then **level**, then **total deliveries**, then current XP.
-- Once you're capped at level 200, total deliveries is what separates you from everyone else at the cap.
+- Ranking by **level**, then prestige level, then total deliveries, then current XP.
 - Each row: rank, name, level (+ prestige tag if any), total earnings, total deliveries.
 - Your personal rank is shown in the footer.
 - Paginated 10 per page (⬅️/➡️ buttons, 5-minute timeout).
@@ -160,16 +260,19 @@ Top 100 delivery drivers across the bot.
 
 ## Upgrades
 
-Bought separately (not in a slash command - bought through the in-game UI). Examples:
+Bought separately (not in a slash command - bought through the in-game UI). One-time purchases, permanent, and they stack with level unlocks:
 
-- **Insulated Bag** - keep food hot for better tips (+35% tips).
-- **GPS Navigation** - reduce wrong delivery penalties (−50% penalties).
-- **Premium Customers** - access higher paying customers (+25% base pay).
-- **Weather Gear** - enhanced bad weather bonuses (+50% weather bonus).
+- **Insulated Bag** - $50B - keep food hot for better tips (+35% tips).
+- **GPS Navigation** - $75B - reduce wrong delivery penalties (−50% penalties).
+- **Premium Customers** - $100B - access higher paying customers (+25% base pay).
+- **Weather Gear** - $150B - enhanced bad weather bonuses (+50% weather bonus).
 
-Each upgrade has a max level. Bonuses stack.
+## Level unlocks
+
+You earn a free permanent bonus every 5 levels, up to level 200 - **40 unlocks** in total. They apply automatically to every delivery and stack with shop upgrades. Use **View All Unlocks** on your profile for the full list.
 
 ## Notes
 
 - **Cooldown** for `/fries-in-bag` and `/fries-profile`: 4 seconds.
-- **Mistakes are costly** - wrong items, wrong area, or wrong house all reduce the payout.
+- **The address is shown once.** Read it before you start bagging - it is hidden on every screen after the order card, and a wrong block will not tell you the right one.
+- **Mistakes are costly** - a wrong item forfeits its full value, and wrong blocks/doors cut into your payout.
