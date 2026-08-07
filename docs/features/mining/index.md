@@ -19,6 +19,11 @@ Mine ores from depth-based veins, sell them for money, level up to unlock deeper
 | [`/mine profile`](profile.md) | Stats, level, perks, abilities, depth switcher |
 | [`/mine shop`](shop.md) | Buy pickaxes with money and consumable tools |
 | [`/mine depths`](depths.md) | Browse all 15 depths and their ore pools |
+| [`/mine event`](events.md) | See the live server-wide mining event |
+
+## Mining events
+
+Twice a day the bot fires one of **27 [mining events](events.md)** - server-wide boosts that can double or quadruple ore value, multiply XP up to 5×, flood the caves with rare ore, cut the dig cooldown by up to 75%, or hand out 15× jackpot strikes. They apply to everyone at once and last a few hours. Value earned during an event is banked into your inventory, so an event haul stays valuable even after it ends.
 
 ## Pickaxes
 
@@ -26,24 +31,24 @@ Mine ores from depth-based veins, sell them for money, level up to unlock deeper
 
 | Pickaxe | Level | Price | Value | XP | Rare | Notes |
 |---|---|---|---|---|---|---|
-| 🪓 **Wooden** | 1 | Free | 1.0× | 1.0× | 1.0× | Starter |
-| ⛏️ **Iron** | 5 | $500M | 1.05× | 1.03× | 1.05× | Buyable |
-| 🔨 **Steel** | 15 | $2.5B | 1.12× | 1.06× | 1.10× | Buyable |
-| ✨ **Gold** | 25 | $8B | 1.20× | 1.10× | 1.18× | Buyable |
-| ⬜ **Platinum** | 35 | $18B | 1.28× | 1.14× | 1.25× | Buyable |
-| 💎 **Diamond** | 45 | $45B | 1.35× | 1.18× | 1.35× | Buyable |
-| 🖤 **Obsidian** | 55 | - | 1.42× | 1.22× | 1.45× | Craft-only |
-| 🔮 **Mythril** | 70 | - | 1.50× | 1.28× | 1.55× | Craft-only |
-| 🌌 **Void** | 85 | - | 1.60× | 1.35× | 1.70× | Craft-only |
-| 🌠 **Cosmic** | 100 | - | 1.70× | 1.42× | 1.85× | Craft-only |
-| 🌟 **Stellar** | 125 | - | 1.85× | 1.50× | 2.00× | Craft-only |
-| ♾️ **Eternal** | 150 | - | 2.00× | 1.60× | 2.20× | Craft-only |
-| 🌋 **Primordial** | 175 | - | 2.20× | 1.75× | 2.50× | Craft-only |
-| 🔆 **Transcendent** | 200 | - | 2.50× | 2.00× | 3.00× | Craft-only |
-| 🌞 **Celestial** | 250 | - | 3.00× | 2.30× | 3.40× | Craft-only |
-| 🕳️ **Singularity** | 300 | - | 3.60× | 2.60× | 3.90× | Craft-only |
-| 🌀 **Infinity** | 400 | - | 4.50× | 3.10× | 4.60× | Craft-only |
-| 💫 **Omniversal** | 500 | - | 5.80× | 3.70× | 5.50× | Craft-only |
+| 🪨 **Flint** | 1 | Free | 1.0× | 1.0× | 1.0× | Starter |
+| ⬛ **Slate** | 5 | $500M | 1.05× | 1.03× | 1.05× | Buyable |
+| 🏔️ **Granite** | 15 | $2.5B | 1.12× | 1.06× | 1.10× | Buyable |
+| 🧱 **Basalt** | 25 | $8B | 1.20× | 1.10× | 1.18× | Buyable |
+| ⚪ **Quartz** | 35 | $18B | 1.28× | 1.14× | 1.25× | Buyable |
+| 🖤 **Obsidian** | 45 | $45B | 1.35× | 1.18× | 1.35× | Buyable |
+| ⬜ **Bedrock** | 55 | - | 1.42× | 1.22× | 1.45× | Craft-only |
+| 🌑 **Cinder** | 70 | - | 1.50× | 1.28× | 1.55× | Craft-only |
+| 🔴 **Ember** | 85 | - | 1.60× | 1.35× | 1.70× | Craft-only |
+| 🟠 **Magma** | 100 | - | 1.70× | 1.42× | 1.85× | Craft-only |
+| 🌋 **Caldera** | 125 | - | 1.85× | 1.50× | 2.00× | Craft-only |
+| ♨️ **Mantle** | 150 | - | 2.00× | 1.60× | 2.20× | Craft-only |
+| ⚫ **Core** | 175 | - | 2.20× | 1.75× | 2.50× | Craft-only |
+| ⚒️ **Forge** | 200 | - | 2.50× | 2.00× | 3.00× | Craft-only |
+| ⚗️ **Crucible** | 250 | - | 3.00× | 2.30× | 3.40× | Craft-only |
+| 🔥 **Furnace** | 300 | - | 3.60× | 2.60× | 3.90× | Craft-only |
+| ☄️ **Inferno** | 400 | - | 4.50× | 3.10× | 4.60× | Craft-only |
+| 🗿 **Titan** | 500 | - | 5.80× | 3.70× | 5.50× | Craft-only |
 
 ## Depths (15 total)
 
