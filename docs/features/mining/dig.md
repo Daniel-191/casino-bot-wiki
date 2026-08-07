@@ -48,7 +48,7 @@ For every spot you click:
 
 ## Cooldown
 
-The mining cooldown is shared across the bot's general action system - Patreon donators get a reduced cooldown.
+The mining cooldown is shared across the bot's general action system - Patreon donators get a reduced cooldown, and some [mining events](events.md) cut it by up to 75% while they're live.
 
 ## Session limits
 
