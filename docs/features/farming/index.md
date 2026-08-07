@@ -85,6 +85,12 @@ Like Patreon boosts, event effects scale your **profit margin**, not the gross s
 
 Events only affect crops that were **already planted** when they trigger - empty fields = no impact. Use [`/farming-events`](events.md) to see recent events and whether they hit your crops.
 
+## Quest combo
+
+Harvesting is boosted by your [quest combo multiplier](../quests/index.md) - up to **2.60×** at full stacks. It is applied last, on top of Patreon boosts and event bonuses, and scales the **crop sale value only**. Seeds and fertilizer stay at list price, so the combo widens your margin rather than inflating both sides of it.
+
+Auto-replant harvests earn the combo as well, but read the multiplier from your last active session - crops that come in while you are offline pay flat.
+
 ## Commands
 
 - [`/farming`](farming.md) - Open your farm interface
