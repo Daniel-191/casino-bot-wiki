@@ -37,6 +37,7 @@ Scratch-card tickets count toward your **total** but **don't count against your 
 - **Pot composition:** ticket sales + heist tax + other taxes.
 - **Winner's tax:** standard tier-based tax cuts in (smaller bite for higher Patreon tiers).
 - **Winners announced** daily in the [Paradise Discord server](https://discord.gg/vMcbru7qMV).
+- **The announcement shows the odds each winner beat** - their ticket count, the exact percentage chance (your tickets ÷ all tickets in the draw) and the same odds as "1 in N". The winner who held the fewest tickets gets an **Against the odds** callout.
 
 ## Pot growth
 
