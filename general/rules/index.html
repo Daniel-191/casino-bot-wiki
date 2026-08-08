@@ -5371,7 +5371,7 @@
 <ul>
 <li><strong>Begging in non-beg channels</strong> for free money from staff.</li>
 <li><strong>Spamming</strong> the same command repeatedly to clog the bot.</li>
-<li><strong>Failing captcha</strong> (<code>/verify</code>) repeatedly may lead to a temporary lock.</li>
+<li><strong>Failing captcha</strong> (<code>/verify</code>) repeatedly leads to a temporary lock - fishing pauses for 5 minutes after a failed verification.</li>
 </ul>
 <h2 id="fair-play">Fair play</h2>
 <ul>
@@ -5386,7 +5386,14 @@
 <li><strong>Bug-related refunds</strong> are case-by-case - open a support ticket.</li>
 </ul>
 <h2 id="anti-selfbot">Anti-selfbot</h2>
-<p>The bot runs random captchas via <code>/verify</code>. Failing or skipping these can flag your account.</p>
+<p>The bot runs random captchas, either on its own when your activity looks automated, or on demand via <code>/verify</code>. Failing or skipping these can flag your account.</p>
+<p>How a captcha works:</p>
+<ul>
+<li>Press <strong>Verify</strong> and type the characters from the image. Case and spacing don't matter.</li>
+<li>You get <strong>3 attempts</strong> and <strong>2 new images</strong> per captcha. Refreshing the image does not give you extra attempts.</li>
+<li>A captcha expires after <strong>3 minutes</strong>. Answering impossibly fast counts as a failed attempt.</li>
+<li>Using up all 3 attempts pauses fishing for <strong>5 minutes</strong>, and ending the session doesn't clear that.</li>
+</ul>
 <h2 id="reporting-violations">Reporting violations</h2>
 <ul>
 <li>Open a ticket in the support Discord (use <a href="../../features/other/links/"><code>/links</code></a>).</li>
