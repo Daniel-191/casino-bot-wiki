@@ -5412,7 +5412,7 @@
 <h1 id="russian-roulette">/russian-roulette</h1>
 <p>Group elimination shootout. Players take turns pulling the trigger - survive long enough and you take the entire pot.</p>
 <h2 id="description">Description</h2>
-<p>You start a lobby in your channel with an entry fee. Other players join by clicking. Once the host starts the game (or autostart fires), each round the bot picks a player at random to "pull the trigger." Eliminated players are out; last one standing wins the pot.</p>
+<p>You start a lobby in your channel with an entry fee. Other players join by clicking. Once the host starts the game - or the 5-minute lobby timer runs out, which always starts it - each round the bot picks a player at random to "pull the trigger." Eliminated players are out; last one standing wins the pot.</p>
 <h2 id="required-fields">Required Fields</h2>
 <ul>
 <li><strong>entry_fee</strong> - Buy-in amount each player pays.</li>
@@ -5420,21 +5420,19 @@
 <h2 id="optional-fields">Optional Fields</h2>
 <ul>
 <li><strong>max_players</strong> - Cap the number of players (default <code>0</code> = unlimited).</li>
-<li><strong>autostart</strong> - Auto-start the game when the lobby timer ends if minimum players are met (default <code>false</code>).</li>
-<li><strong>min_autostart_players</strong> - Minimum players required to autostart (default <code>2</code>, must be 2+).</li>
 </ul>
 <h2 id="usage">Usage</h2>
-<p><code>/russian-roulette [entry_fee] [max_players] [autostart] [min_autostart_players]</code></p>
+<p><code>/russian-roulette [entry_fee] [max_players]</code></p>
 <h2 id="examples">Examples</h2>
 <p><code>/russian-roulette 100k</code>
-<code>/russian-roulette 1m max_players:6 autostart:true</code>
-<code>/russian-roulette 5m max_players:0 autostart:true min_autostart_players:3</code></p>
+<code>/russian-roulette 1m max_players:6</code>
+<code>/russian-roulette 5m max_players:0</code></p>
 <h2 id="lobby-flow">Lobby flow</h2>
 <ol>
 <li>Host runs the command - entry fee deducted, lobby embed posted.</li>
 <li>Other players see <strong>Join</strong> / <strong>Leave</strong> / <strong>Start</strong> / <strong>Cancel</strong> buttons.</li>
-<li>Lobby auto-cleans after <strong>5 minutes</strong> of inactivity.</li>
-<li>Host clicks <strong>Start</strong> when ready (or autostart fires).</li>
+<li>The lobby runs for <strong>5 minutes</strong>.</li>
+<li>Host clicks <strong>Start</strong> when ready; otherwise the game starts itself the moment the timer ends, as long as at least <strong>2</strong> players joined. Below that everyone is refunded.</li>
 <li>Bot rolls for each round, eliminates players one-by-one, posts the survivor as the pot winner.</li>
 </ol>
 <h2 id="pot-mechanics">Pot mechanics</h2>

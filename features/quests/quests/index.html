@@ -2304,6 +2304,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#refreshing-your-daily-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Refreshing your daily set
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#completion-alerts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5501,6 +5512,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#refreshing-your-daily-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Refreshing your daily set
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#completion-alerts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5619,8 +5641,10 @@
 </table>
 <p>Every tab carries a footer with your <strong>token balance</strong> and your <strong>current multiplier</strong>.</p>
 <p>A <strong>Reminders</strong> button sits under the tabs on every tab. It is <strong>green</strong> when daily quest reminder DMs are on and <strong>red</strong> when they are off - click it to toggle. See <a href="../reminders/">reminders</a>.</p>
+<p>A <strong>Refresh Quests</strong> button sits next to it on the <strong>Daily</strong> tab only. See <a href="#refreshing-your-daily-set">refreshing your daily set</a>.</p>
 <h2 id="usage">Usage</h2>
 <p><code>/quests</code></p>
+<p><code>/refresh-quests</code> swaps your unfinished daily quests for different ones - the same thing the Daily tab's button does, without opening the hub.</p>
 <p><code>/leaderboards quest-tokens</code> ranks the players holding the most quest tokens, globally or inside your server.</p>
 <h2 id="how-a-set-is-drawn">How a set is drawn</h2>
 <p>Both sets are drawn from a fixed seed built from the date, so:</p>
@@ -5916,6 +5940,49 @@
 </tr>
 </tbody>
 </table>
+<h2 id="refreshing-your-daily-set">Refreshing your daily set</h2>
+<p>Handed a day you do not want? A <strong>refresh</strong> swaps your unfinished daily quests for different ones, for <strong>75 quest tokens</strong> a go.</p>
+<p>Either open <code>/quests</code> and press <strong>Refresh Quests</strong> on the Daily tab, or run <code>/refresh-quests</code> on its own. Both show you what is about to change and ask you to confirm before any tokens are spent.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cost</strong></td>
+<td>75 quest tokens per refresh</td>
+</tr>
+<tr>
+<td><strong>Allowance</strong></td>
+<td><strong>2 per week</strong>, or <strong>3</strong> for any <a href="../../store/patreon/">Patreon</a> tier</td>
+</tr>
+<tr>
+<td><strong>Resets</strong></td>
+<td>Monday 00:00 UTC, the same boundary as the weekly quests</td>
+</tr>
+<tr>
+<td><strong>Applies to</strong></td>
+<td>Daily quests only - the weekly set can never be refreshed</td>
+</tr>
+</tbody>
+</table>
+<p>What a refresh does <strong>not</strong> touch:</p>
+<ul>
+<li><strong>Slot 1, the vote quest.</strong> It is the anchor and never rotates, at any price.</li>
+<li><strong>Anything you have already completed.</strong> Those stay exactly where they are, with their tokens already paid - a refresh can never re-sell you a quest you finished.</li>
+</ul>
+<p>Everything else is redrawn. Each replacement comes from its own category, so the set keeps its one-Adventure, one-Economy, one-Engagement shape, and it can never hand you back a quest that was already in the set. Progress on a replaced quest is reset to zero.</p>
+<div class="admonition note">
+<p class="admonition-title">A refreshed set is no longer the global one</p>
+<p>The daily set is normally identical for every player (see <a href="#how-a-set-is-drawn">how a set is drawn</a>). The moment you refresh, yours is your own - so it is no longer the set your friends are comparing notes about. That is the trade.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Your streak is never the reason to refresh</p>
+<p>The vote quest and the Engagement slot already cover the <strong>2 of 4</strong> that keeping your streak needs, so a refresh is never what stands between you and your combo stack. Buy one to make a <strong>full clear</strong> (and its +25 token set bonus) more appetising, not to save a day.</p>
+</div>
 <h2 id="completion-alerts">Completion alerts</h2>
 <p>You never have to open <code>/quests</code> to find out you finished one. The moment a quest completes, the next thing you do with the bot comes back with a short private reply telling you:</p>
 <ul>
@@ -5935,6 +6002,7 @@
 <li>Resets are <strong>00:00 UTC</strong> daily and <strong>Monday 00:00 UTC</strong> weekly.</li>
 <li>Progress is buffered and written to disk every <strong>30 seconds</strong>, and immediately whenever a quest completes - so a bar can lag a few seconds behind a fast activity like fishing, but a completion never does.</li>
 <li>Only you can press the buttons on your own hub.</li>
+<li>A refused refresh - no allowance left, not enough tokens, nothing left to refresh - never spends a token.</li>
 <li>The panel times out after <strong>3 minutes</strong>; run the command again to reopen it.</li>
 <li>For the multiplier rules, decay and full token maths, see the <a href="../">Quests index</a>.</li>
 </ul>

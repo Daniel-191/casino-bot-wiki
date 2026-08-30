@@ -5444,22 +5444,20 @@
 <h2 id="optional-fields">Optional Fields</h2>
 <ul>
 <li><strong>max_players</strong> - Maximum players allowed at the table (1–7, default <code>7</code>).</li>
-<li><strong>autostart</strong> - Auto-start when the lobby timer ends if minimum players are met (default <code>true</code>).</li>
-<li><strong>min_autostart_players</strong> - Minimum players needed to autostart (1–7, default <code>1</code>).</li>
 </ul>
 <h2 id="usage">Usage</h2>
-<p><code>/multiblackjack [bet] [max_players] [autostart] [min_autostart_players]</code></p>
+<p><code>/multiblackjack [bet] [max_players]</code></p>
 <h2 id="examples">Examples</h2>
 <p><code>/multiblackjack 100k</code>
 <code>/multiblackjack 1m max_players:4</code>
-<code>/multiblackjack 5m max_players:7 autostart:true min_autostart_players:3</code></p>
+<code>/multiblackjack 5m max_players:7</code></p>
 <h2 id="lobby-flow">Lobby flow</h2>
 <ol>
 <li>Host runs the command - host's bet is deducted and the lobby is posted.</li>
 <li>Other players click <strong>Join</strong> and pick their own bet.</li>
 <li>Lobby has a <strong>5-minute</strong> countdown timer.</li>
-<li>Host can <strong>Start</strong> anytime; otherwise autostart fires when the timer ends if <code>min_autostart_players</code> is met.</li>
-<li>If the lobby expires with no players, all bets are refunded.</li>
+<li>Host can <strong>Start</strong> anytime; otherwise the table deals itself the moment the timer ends, with whoever is seated.</li>
+<li>If the timer ends with nobody at the table, all bets are refunded.</li>
 </ol>
 <h2 id="game-flow">Game flow</h2>
 <ol>
@@ -5502,7 +5500,7 @@
 <ul>
 <li><strong>Cooldown:</strong> 5 seconds (host).</li>
 <li><strong>Players:</strong> 1–7 (max configurable per game).</li>
-<li><strong>Timer:</strong> 5-minute lobby with optional autostart.</li>
+<li><strong>Timer:</strong> 5-minute lobby; the table always deals itself when the timer ends.</li>
 <li><strong>Each player can only be in one game at a time</strong> - GameManager enforces this for everyone at the table.</li>
 <li><strong>Only one Multiplayer Blackjack per channel</strong> at a time. If a table stalls, the channel frees itself automatically and the bets are refunded.</li>
 <li>On error, all bets are refunded automatically.</li>

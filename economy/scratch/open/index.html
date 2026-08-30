@@ -5390,13 +5390,14 @@
 <li><strong>Use Now</strong> - apply immediately (boosts your currently growing crops, etc.).</li>
 <li><strong>Store</strong> - save it to your inventory and claim later via <a href="../inventory/"><code>/scratch inventory</code></a>.</li>
 </ul>
+<p>Farm boosts are spent <strong>optimally</strong>: the bot works out how long your slowest crop still needs and uses only the fewest boosts that cover it, preferring the largest boost that doesn't overshoot. Any boost that isn't needed is stored in your inventory instead of being wasted.</p>
 <p>Patreon gifts always go to inventory and must be claimed manually - they aren't applied automatically because they replace your active membership tier for 7 days.</p>
 <h2 id="notes">Notes</h2>
 <ul>
 <li><strong>Cooldown:</strong> 3 seconds.</li>
 <li><strong>No cards</strong> = the command shows you how to get some (<code>/vote</code>).</li>
 <li>Money rewards apply instantly to your wallet.</li>
-<li>Farm boosts can only be applied if you have crops planted; otherwise they're stored.</li>
+<li>Farm boosts can only be applied if you have crops planted; otherwise they're stored. Boosts beyond what your crops need are stored too.</li>
 <li>See <a href="../history/"><code>/scratch history</code></a> for past sessions and <a href="../stats/"><code>/scratch stats</code></a> for totals.</li>
 </ul>
 
