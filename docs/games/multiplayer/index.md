@@ -20,6 +20,7 @@ Player-vs-player and group games. Some are 1v1 duels, some are channel-wide free
 | [`/multiplayer_dice`](multiplayer-dice.md) | Group elimination | 2+ | - |
 | [`/murdermystery`](murdermystery.md) | Social deduction | 4–15 | 5s |
 | [`/multiblackjack`](multiblackjack.md) | Multi-table casino | 1–7 | 5s |
+| [`/uno`](uno.md) | Group card game (DM-played) | 2–6 | 5s |
 | [`/heist` & `/solo-heist`](../heists/index.md) | Group robbery | 1–50 | 10m |
 
 ## Common rules
@@ -46,10 +47,11 @@ Player-vs-player and group games. Some are 1v1 duels, some are channel-wide free
 [`/rps-multiplayer`](rps-multiplayer.md), `/multidice`, [`/multiplayer_dice`](multiplayer-dice.md) - some skill, mostly luck.
 
 ### Group
-[`/murdermystery`](murdermystery.md), [`/multiblackjack`](multiblackjack.md), [Heists](../heists/index.md) - 3+ players in one lobby.
+[`/murdermystery`](murdermystery.md), [`/multiblackjack`](multiblackjack.md), [`/uno`](uno.md), [Heists](../heists/index.md) - 3+ players in one lobby.
 
 ## Notes
 
+- [`/uno`](uno.md) is played entirely in your DMs, so you must have direct messages enabled to join.
 - For solo casino games, see the [Casino Games index](../casino/index.md).
 - For multiplayer **stats**, use [`/stats`](../../economy/money-management/stats.md) with the appropriate game name.
 - Disputes/refunds: if a multiplayer game errors out, the bet is refunded automatically (or contact support if not - see [Contact](../../support/contact.md)).

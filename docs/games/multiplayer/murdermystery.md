@@ -54,7 +54,7 @@ Detectives are assigned 1 per 6 players (minimum 1). One guardian angel / doctor
 
 ## Game flow
 
-1. **Lobby** - players join via button; host starts manually. Lobby expires after **10 minutes** of inactivity, refunding all entry fees.
+1. **Lobby** - players join via button; the host can start manually, and after **10 minutes** the lobby starts itself with whoever joined. If the minimum player count still is not met at that point, all entry fees are refunded.
 2. **Role reveal** - each player gets their role by DM (ephemeral fallback if DMs are closed). Night begins after a short 5-second pause.
 3. **Night round (~2 min)** - killers/detectives/guardian angels/doctors act. The status panel reposts on every action. Round ends early when all alive killers have acted.
 4. **Meeting (~2 min)** - 30 seconds of discussion, then ~75 seconds of voting. Players can skip or vote a target. Live vote tally shown on the panel.
@@ -97,7 +97,7 @@ Each winner gets `pot × score / total_score`, with any remainder going to the t
 ## Notes
 
 - **Cooldown:** 5 seconds (host).
-- **One game per channel** at a time.
+- **One game per channel** at a time. If a game stalls, the channel frees itself automatically.
 - Lobby and game both auto-clean if abandoned, refunding fees and penalties.
 - The host can leave during the lobby; host transfers to the next remaining player.
 - Re-DM your role any time with the **Get Role Info** button.

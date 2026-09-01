@@ -30,7 +30,7 @@ Donator tiers unlock additional toggles:
 - **Auto-replant farming** - automatically harvest and replant ready crops (small profit tax applies).
 - **0% heist tax** at Tier 6+.
 
-Activate Patreon perks by linking your Patreon account and joining the main Paradise server.
+Activate Patreon perks by connecting your Discord account to Patreon. Joining the Paradise server is no longer required - your rank follows your account.
 
 ## What you can't change
 

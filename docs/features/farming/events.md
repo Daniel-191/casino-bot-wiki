@@ -4,7 +4,7 @@ View the last few farming events that fired - and whether they affected your cro
 
 ## Description
 
-Random crop events trigger **twice a day**, at **10:00 and 22:00 UTC**, and either **buff** or **debuff** all crops that were already planted at the time. This command shows you the **5 most recent events** with timestamps, what they did, how many farmers and crops they hit, and a green check / red X for whether your own crops were affected.
+Random crop events trigger **twice a day** at **random times** - once in the afternoon and once in the evening, US time - and either **buff** or **debuff** all crops that were already planted at the time. This command shows you the **5 most recent events** with timestamps, what they did, how many farmers and crops they hit, and a green check / red X for whether your own crops were affected.
 
 If you had no crops planted when an event fired, you weren't affected - events only apply to crops that were **already in the ground**.
 

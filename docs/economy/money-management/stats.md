@@ -30,3 +30,4 @@ A green chart icon means you're up overall on that game; red means you're down.
 - Profit and losses are tracked per game, separately. Net = profit − losses.
 - If a player has no recorded games yet, you'll see a "no stats found" embed.
 - For ranking by total wealth instead of game results, use [`/leaderboard`](leaderboard.md).
+- To see how you compare against everyone else on a game, use [`/leaderboards gambling`](leaderboards-gambling.md).

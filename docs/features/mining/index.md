@@ -20,6 +20,7 @@ Mine ores from depth-based veins, sell them for money, level up to unlock deeper
 | [`/mine shop`](shop.md) | Buy pickaxes with money and consumable tools |
 | [`/mine depths`](depths.md) | Browse all 15 depths and their ore pools |
 | [`/mine event`](events.md) | See the live server-wide mining event |
+| `/leaderboards mining` | Top miners by level, ores mined or total earnings (global or server) |
 
 ## Mining events
 

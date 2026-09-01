@@ -10,6 +10,7 @@ Your mining backpack. Every ore you extract lands here and stays until you sell 
 - **Sell All** - convert your entire backpack to money in one click.
 - **Craft pickaxes** - spend the right ores + money to build a pickaxe.
 - **Equip pickaxes** - switch to any pickaxe you own.
+- **Sell Pickaxe** - clear out an old pickaxe for a partial money refund, or trash it for nothing.
 
 Each ore stack shows the money it's worth. That figure is the sum of the values the ores rolled when you mined them, so your pickaxe, perk and ability bonuses are already baked in - saving an ore for crafting never loses you value.
 
@@ -53,9 +54,19 @@ Crafting needs specific ores plus a dollar cost. Everything from the Slate Picka
 
 Buyable pickaxes (Slate, Granite, Basalt, Quartz, Obsidian) can also be crafted at lower cost.
 
+## Selling and trashing pickaxes
+
+Upgrading leaves old pickaxes sitting in your list forever. **Sell Pickaxe** clears them out:
+
+- **Sell** pays back **60% of the money you actually spent on that pickaxe** - the shop price if you bought it, the recipe's dollar cost if you crafted it. Crafting ores are not refunded.
+- **Trash** deletes the pickaxe and pays nothing. It's there for pickaxes you don't want money for, and for anything with a $0 refund.
+- Your starter **Flint Pickaxe** can't be sold or trashed - it's the fallback the game equips for you.
+- Selling or trashing the pickaxe you have equipped automatically re-equips the Flint Pickaxe.
+
 ## Notes
 
 - **Selling is irreversible** - once sold, ores convert to money and disappear from inventory. Check the ⚒️ markers before using **Sell All**.
+- Selling a pickaxe is also irreversible, and always a loss - you never get back more than you put in. Buying it again costs full price.
 - Ores accumulate across sessions - keep mining until you have enough for the next tier.
 - Equipping is instant; it doesn't consume the pickaxe.
 - See [`/mine shop`](shop.md) to buy pickaxes with money instead of crafting.

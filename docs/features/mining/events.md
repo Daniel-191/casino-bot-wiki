@@ -4,7 +4,7 @@ Server-wide mining boosts that fire **twice a day** and apply to every miner at 
 
 ## Description
 
-Twice a day - at **07:00 and 19:00 UTC** - the bot rolls one of **27 mining events** and announces it in the mining events channel with a role ping. The event runs for a few hours, then expires on its own.
+Twice a day - at **random times**, one in the afternoon and one in the evening US time - the bot rolls one of **27 mining events** and announces it in the mining events channel with a role ping. The event runs for a few hours, then expires on its own.
 
 Events change the mining game while they're live: ore value, XP, rare ore odds, the `/mine dig` cooldown, how many ores a spot drops, and jackpot strikes. Everything stacks **on top of** your pickaxe bonuses, level perks, consumable tools and donor bonuses.
 

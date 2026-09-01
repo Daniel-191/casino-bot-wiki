@@ -107,6 +107,7 @@ nav:
     - /transactions_toggle: economy/money-management/transactions-toggle.md
     - /cooldowns: economy/money-management/cooldowns.md
     - /stats: economy/money-management/stats.md
+    - /leaderboards gambling: economy/money-management/leaderboards-gambling.md
 
   - Earning Money:
     - economy/earning/index.md
@@ -188,6 +189,7 @@ nav:
     - /connect4: games/multiplayer/connect4.md
     - /tic-tac-toe: games/multiplayer/tictactoe.md
     - /wordle: games/multiplayer/wordle.md
+    - /uno: games/multiplayer/uno.md
 
   - Heists:
     - games/heists/index.md

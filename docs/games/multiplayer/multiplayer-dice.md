@@ -52,7 +52,7 @@ Repeat until only one player remains - they take the whole pot.
 - **Min entry fee:** $10,000.
 - **Max entry fee:** standard MAX_BET (bet bypass users excepted).
 - **Minimum 2 players** to start.
-- **Only one Multiplayer Dice game per channel** at a time.
+- **Only one Multiplayer Dice game per channel** at a time. A lobby nobody starts is refunded and the channel freed automatically.
 - Host can't start their own game while already hosting another.
 - For solo dice, see [`/dice`](../casino/dice.md) or `/multidice`.
 - For 1v1 dice duel, see [`/diceduel`](diceduel.md).

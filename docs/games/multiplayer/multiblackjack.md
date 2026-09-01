@@ -17,26 +17,24 @@ For solo blackjack, see [`/blackjack`](../casino/blackjack.md).
 ## Optional Fields
 
 - **max_players** - Maximum players allowed at the table (1–7, default `7`).
-- **autostart** - Auto-start when the lobby timer ends if minimum players are met (default `true`).
-- **min_autostart_players** - Minimum players needed to autostart (1–7, default `1`).
 
 ## Usage
 
-`/multiblackjack [bet] [max_players] [autostart] [min_autostart_players]`
+`/multiblackjack [bet] [max_players]`
 
 ## Examples
 
 `/multiblackjack 100k`
 `/multiblackjack 1m max_players:4`
-`/multiblackjack 5m max_players:7 autostart:true min_autostart_players:3`
+`/multiblackjack 5m max_players:7`
 
 ## Lobby flow
 
 1. Host runs the command - host's bet is deducted and the lobby is posted.
 2. Other players click **Join** and pick their own bet.
 3. Lobby has a **5-minute** countdown timer.
-4. Host can **Start** anytime; otherwise autostart fires when the timer ends if `min_autostart_players` is met.
-5. If the lobby expires with no players, all bets are refunded.
+4. Host can **Start** anytime; otherwise the table deals itself the moment the timer ends, with whoever is seated.
+5. If the timer ends with nobody at the table, all bets are refunded.
 
 ## Game flow
 
@@ -63,8 +61,8 @@ Doubling down is blocked if it would take a single hand's stake above the max be
 
 - **Cooldown:** 5 seconds (host).
 - **Players:** 1–7 (max configurable per game).
-- **Timer:** 5-minute lobby with optional autostart.
+- **Timer:** 5-minute lobby; the table always deals itself when the timer ends.
 - **Each player can only be in one game at a time** - GameManager enforces this for everyone at the table.
-- **Only one Multiplayer Blackjack per channel** at a time.
+- **Only one Multiplayer Blackjack per channel** at a time. If a table stalls, the channel frees itself automatically and the bets are refunded.
 - On error, all bets are refunded automatically.
 - For solo play, see [`/blackjack`](../casino/blackjack.md).

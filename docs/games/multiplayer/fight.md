@@ -50,6 +50,6 @@ Both players also see a **help embed** before the duel showing all weapon stats.
 - **Cooldown:** 4 seconds (with internal rate limiter on top - spam protection).
 - **Min bet:** $10,000.
 - **No max bet cap** - `max` confirms before locking in your full balance.
-- **Only one fight per channel** at a time.
+- **Only one fight per channel** at a time. If a fight stalls, the channel frees itself automatically (5 minutes idle, 30 minutes total) and everyone is refunded.
 - **HP starts at 100** for both fighters; first to 0 loses.
 - For pure-luck 1v1s, see [`/coinflip-duel`](coinflip-duel.md), [`/diceduel`](diceduel.md), or [`/russian-roulette`](russian-roulette.md).

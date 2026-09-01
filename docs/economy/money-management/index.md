@@ -23,6 +23,7 @@ Paradise Bot splits your money into two places:
 | [`/transactions_toggle`](transactions-toggle.md) | Block or allow incoming payments |
 | [`/cooldowns`](cooldowns.md) | See when income commands are ready again |
 | [`/stats`](stats.md) | Profit/loss across every game you've played |
+| [`/leaderboards gambling`](leaderboards-gambling.md) | Top gamblers per game by profit, losses or net |
 
 ## Amount shortcuts
 

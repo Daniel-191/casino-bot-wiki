@@ -43,11 +43,11 @@ Every card draws one reward weighted by rarity:
 - **Lottery Ticket** - automatically added to the current lottery draw (1, 2, 3, 5, or 10 tickets).
 - **Jackpot** - large money prize (10× or 15× vote reward).
 - **Mega Jackpot** - 25× vote reward (legendary only).
-- **Patreon Gift** - 7-day membership at the rolled tier (DONATOR → GODLY). Stored in inventory; recipient must claim manually.
+- **Patreon Gift** - 7 days of the rolled rank (DONATOR → GODLY). Banked into `/stored-patreon`; redeem it yourself whenever you want it to start.
 
 ## Notes
 
 - Each card opens **one** reward.
 - Money rewards apply instantly. Non-money rewards (farm boosts, Patreon gifts) can be **used now** or **stored** in your inventory for later.
-- Patreon gifts always go to the inventory and must be claimed.
+- Patreon gifts are banked as rank days in `/stored-patreon` rather than starting straight away, so a win is never wasted while you already hold a higher rank. No support ticket is involved.
 - See [`/vote`](../earning/vote.md) to earn cards.

@@ -17,9 +17,17 @@ Every tab carries a footer with your **token balance** and your **current multip
 
 A **Reminders** button sits under the tabs on every tab. It is **green** when daily quest reminder DMs are on and **red** when they are off - click it to toggle. See [reminders](reminders.md).
 
+A **Refresh Quests** button sits next to it on the **Daily** tab only. See [refreshing your daily set](#refreshing-your-daily-set).
+
+A **Skip a Quest** button sits alongside it on the **Daily** tab, for [Patreon](../store/patreon.md) members only. See [skipping a quest](#skipping-a-quest).
+
 ## Usage
 
 `/quests`
+
+`/refresh-quests` swaps your unfinished daily quests for different ones - the same thing the Daily tab's button does, without opening the hub.
+
+`/leaderboards quest-tokens` ranks the players holding the most quest tokens, globally or inside your server.
 
 ## How a set is drawn
 
@@ -131,6 +139,68 @@ This is the quest that chains the daily track into the weekly one.
 | Vote 5 times this week | 5 | One per day at most, so 5 days of voting |
 | Play 100 casino games | 100 | Any casino or wagering game, one per round played |
 
+## Refreshing your daily set
+
+Handed a day you do not want? A **refresh** swaps your unfinished daily quests for different ones, for **75 quest tokens** a go.
+
+Either open `/quests` and press **Refresh Quests** on the Daily tab, or run `/refresh-quests` on its own. Both show you what is about to change and ask you to confirm before any tokens are spent.
+
+| | |
+|---|---|
+| **Cost** | 75 quest tokens per refresh |
+| **Allowance** | **2 per week**, or **3** for any [Patreon](../store/patreon.md) tier |
+| **Resets** | Monday 00:00 UTC, the same boundary as the weekly quests |
+| **Applies to** | Daily quests only - the weekly set can never be refreshed |
+
+What a refresh does **not** touch:
+
+- **Slot 1, the vote quest.** It is the anchor and never rotates, at any price.
+- **Anything you have already completed.** Those stay exactly where they are, with their tokens already paid - a refresh can never re-sell you a quest you finished.
+
+Everything else is redrawn. Each replacement comes from its own category, so the set keeps its one-Adventure, one-Economy, one-Engagement shape, and it can never hand you back a quest that was already in the set. Progress on a replaced quest is reset to zero.
+
+!!! note "A refreshed set is no longer the global one"
+    The daily set is normally identical for every player (see [how a set is drawn](#how-a-set-is-drawn)). The moment you refresh, yours is your own - so it is no longer the set your friends are comparing notes about. That is the trade.
+
+!!! tip "Your streak is never the reason to refresh"
+    The vote quest and the Engagement slot already cover the **2 of 4** that keeping your streak needs, so a refresh is never what stands between you and your combo stack. Buy one to make a **full clear** (and its +25 token set bonus) more appetising, not to save a day.
+
+## Skipping a quest
+
+Handed the one objective you will not do? A **quest skip** completes an unfinished daily for you outright - it pays its **10 tokens**, counts toward the **2 of 4** that keeps your streak, and counts toward the full-clear set bonus, exactly as if you had played it.
+
+Skips are a **[Patreon](../store/patreon.md) perk** and cost no tokens. Open `/quests`, press **Skip a Quest** on the Daily tab, pick the quest from the menu and confirm.
+
+| Rank | Skips per week |
+|---|---|
+| DONATOR | 1 |
+| CHILL | 1 |
+| EPIC | 2 |
+| SUPER | 2 |
+| MEGA | 3 |
+| ULTIMATE | 3 |
+| CRAZY | 4 |
+| GODLY | 5 |
+
+| | |
+|---|---|
+| **Cost** | Free - the allowance is the perk |
+| **Allowance** | 1-5 per week by rank, above |
+| **Daily cap** | **1 per day**, whatever your rank |
+| **Resets** | Monday 00:00 UTC, the same boundary as the refresh and freeze allowances |
+| **Applies to** | Daily quests only - the weekly set can never be skipped |
+
+What a skip can **never** touch:
+
+- **Slot 1, the vote quest.** Voting is the one objective that pays the bot back rather than you, so it is not skippable at any rank.
+- **Anything you have already completed.** Its tokens are already paid; a skip cannot pay them twice.
+
+!!! note "One a day is deliberate"
+    Keeping your streak needs **2 of 4**, so a one-per-day cap means a skip can never hold a day on its own - you still have to vote or clear one real objective. It is there to remove the objective you dislike, not to play the day for you.
+
+!!! tip "Your rank is read when you open the hub"
+    The allowance is sized from your Patreon roles the moment you run `/quests`. Let a rank lapse and your remaining skips go with it at the next open; upgrade and the larger allowance is live immediately.
+
 ## Completion alerts
 
 You never have to open `/quests` to find out you finished one. The moment a quest completes, the next thing you do with the bot comes back with a short private reply telling you:
@@ -152,5 +222,7 @@ The reply is **ephemeral**: only you can see it, and it never interrupts the com
 - Resets are **00:00 UTC** daily and **Monday 00:00 UTC** weekly.
 - Progress is buffered and written to disk every **30 seconds**, and immediately whenever a quest completes - so a bar can lag a few seconds behind a fast activity like fishing, but a completion never does.
 - Only you can press the buttons on your own hub.
+- A refused refresh - no allowance left, not enough tokens, nothing left to refresh - never spends a token.
+- A refused skip - no allowance left, one already used today, nothing left to skip - never spends a skip.
 - The panel times out after **3 minutes**; run the command again to reopen it.
 - For the multiplier rules, decay and full token maths, see the [Quests index](index.md).

@@ -223,7 +223,7 @@ If no event is active, the embed says so and tells you to check back.
 
 ### Event roster
 
-Events are **global** — they affect every player at the same time and fire automatically **twice per day**, at **04:00 and 16:00 UTC**. There are **16** events across **5** tiers:
+Events are **global** — they affect every player at the same time and fire automatically **twice per day** at **random times**, one in the afternoon and one in the evening US time. There are **16** events across **5** tiers:
 
 | Tier | Multiplier | Examples |
 |---|---|---|

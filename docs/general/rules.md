@@ -14,7 +14,7 @@ Paradise Bot is a fair-play environment. These rules cover what's not allowed an
 
 - **Begging in non-beg channels** for free money from staff.
 - **Spamming** the same command repeatedly to clog the bot.
-- **Failing captcha** (`/verify`) repeatedly may lead to a temporary lock.
+- **Failing captcha** (`/verify`) repeatedly leads to a temporary lock - fishing pauses for 5 minutes after a failed verification.
 
 ## Fair play
 
@@ -30,7 +30,14 @@ Paradise Bot is a fair-play environment. These rules cover what's not allowed an
 
 ## Anti-selfbot
 
-The bot runs random captchas via `/verify`. Failing or skipping these can flag your account.
+The bot runs random captchas, either on its own when your activity looks automated, or on demand via `/verify`. Failing or skipping these can flag your account.
+
+How a captcha works:
+
+- Press **Verify** and type the characters from the image. Case and spacing don't matter.
+- You get **3 attempts** and **2 new images** per captcha. Refreshing the image does not give you extra attempts.
+- A captcha expires after **3 minutes**. Answering impossibly fast counts as a failed attempt.
+- Using up all 3 attempts pauses fishing for **5 minutes**, and ending the session doesn't clear that.
 
 ## Reporting violations
 

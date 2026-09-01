@@ -17,7 +17,7 @@ Group battle-royale gun game. A lobby opens, anyone can join, and players take t
 ## How it works
 
 1. Host runs `/simple-buckshot`; a lobby embed opens with **Join / Leave / Start / Cancel** buttons.
-2. Lobby stays open for up to **5 minutes** — minimum 2 players required to start.
+2. Lobby stays open for up to **5 minutes** — minimum 2 players required to start. When the timer ends the game starts itself with whoever joined.
 3. Entry fee is deducted from each player when they join. Pot = `entry_fee × player count`.
 4. Once started, players take turns in order. Each turn the gun fires with **~1/3 live shell probability**.
    - **Live** → that player is eliminated.
@@ -27,6 +27,6 @@ Group battle-royale gun game. A lobby opens, anyone can join, and players take t
 ## Notes
 
 - **Min bet:** $10,000. No max bet cap.
-- Lobby expires after 5 minutes with fewer than 2 players — all entry fees are refunded.
-- One active game per channel at a time.
+- After 5 minutes the lobby starts automatically. With fewer than 2 players there is nothing to start, so all entry fees are refunded instead.
+- One active game per channel at a time. If a game stalls, the channel frees itself automatically and everyone is refunded.
 - This is a separate game from [`/buckshot`](buckshot.md) (the 1v1 shotgun strategy game with items).

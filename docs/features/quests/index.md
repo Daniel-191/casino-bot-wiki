@@ -133,10 +133,15 @@ At the perfect-play rate of ~211 tokens a day:
 | Goal | Cost | Time |
 |---|---|---|
 | A scratch card | 80 | ~9 hours |
+| A [daily quest refresh](quests.md#refreshing-your-daily-set) | 75 | ~9 hours |
 | A [Heist Pass](shop.md#boosts) | 450 | ~2 days |
 | [Irrigation](shop.md#permanent), the cheapest permanent | 2,000 | ~10 days |
 | **All five permanent upgrades** | 14,500 | **~69 days** |
 | Every permanent + both Vote Streak Restores | 24,500 | **~116 days** |
+
+Tokens also buy a **[daily quest refresh](quests.md#refreshing-your-daily-set)** - 75 tokens to swap your unfinished daily quests for different ones, twice a week (three times on Patreon).
+
+[Patreon](../store/patreon.md) members also get **[quest skips](quests.md#skipping-a-quest)** - 1 to 5 a week by rank, one a day, each completing an unfinished daily outright. Skips cost no tokens.
 
 You cannot buy every repeatable, either. Maxing the daily caps - 5 cooldown resets, 10 scratch cards and a Heist Pass - costs **1,550 tokens a day** against an income of ~211. The consumables are meant to be picked, not swept.
 
@@ -171,6 +176,7 @@ A full cycle pays **1,660 tokens**, **six scratch cards** and **one Heist Pass**
 ## Commands
 
 - [`/quests`](quests.md) - Your quests, combo multiplier and the shop
+- [`/refresh-quests`](quests.md#refreshing-your-daily-set) - Swap your unfinished daily quests for different ones
 - [Quest reminders](reminders.md) - Reminder DMs, toggled from the hub
 - [Quest shop](shop.md) - Everything you can buy with tokens
 

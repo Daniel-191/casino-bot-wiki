@@ -58,7 +58,10 @@ Donators get a small boost to **legendary/mythical** catch rates via the `patron
 
 - **Cooldown:** 2.5 seconds base between casts; multiplied by rod cooldown reduction (0.625s on the Eternium rod) and by patron tier.
 - **One equipped rod** at a time.
-- Rod sell-back is **60% of purchase price**.
+- Rod sell-back is **60% of purchase price**. Any rod you own except the starter Wooden Rod can be
+  sold, or **thrown away** for nothing if you just want it out of the collection - trashing asks you
+  to confirm first, since there's no refund and no undo.
+- Selling or trashing the rod you have equipped re-equips the Wooden Rod.
 - Fishing **events** can buff catch rates or payouts globally - they fire automatically.
 - For totals, see [`/fish-stats`](fish-stats.md). For the full rod/location ladder, see the [Fishing index](index.md).
 - Equal-payout alternative system: [Pets](../pets/index.md).
