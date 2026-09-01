@@ -1090,6 +1090,8 @@
       
         
       
+        
+      
     
     
     
@@ -1411,6 +1413,34 @@
     
   
     /stats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../economy/money-management/leaderboards-gambling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /leaderboards gambling
   
 
     
@@ -2308,6 +2338,17 @@
     <span class="md-ellipsis">
       
         Refreshing your daily set
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skipping-a-quest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skipping a quest
       
     </span>
   </a>
@@ -5523,6 +5564,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#skipping-a-quest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Skipping a quest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#completion-alerts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5642,6 +5694,7 @@
 <p>Every tab carries a footer with your <strong>token balance</strong> and your <strong>current multiplier</strong>.</p>
 <p>A <strong>Reminders</strong> button sits under the tabs on every tab. It is <strong>green</strong> when daily quest reminder DMs are on and <strong>red</strong> when they are off - click it to toggle. See <a href="../reminders/">reminders</a>.</p>
 <p>A <strong>Refresh Quests</strong> button sits next to it on the <strong>Daily</strong> tab only. See <a href="#refreshing-your-daily-set">refreshing your daily set</a>.</p>
+<p>A <strong>Skip a Quest</strong> button sits alongside it on the <strong>Daily</strong> tab, for <a href="../../store/patreon/">Patreon</a> members only. See <a href="#skipping-a-quest">skipping a quest</a>.</p>
 <h2 id="usage">Usage</h2>
 <p><code>/quests</code></p>
 <p><code>/refresh-quests</code> swaps your unfinished daily quests for different ones - the same thing the Daily tab's button does, without opening the hub.</p>
@@ -5983,6 +6036,94 @@
 <p class="admonition-title">Your streak is never the reason to refresh</p>
 <p>The vote quest and the Engagement slot already cover the <strong>2 of 4</strong> that keeping your streak needs, so a refresh is never what stands between you and your combo stack. Buy one to make a <strong>full clear</strong> (and its +25 token set bonus) more appetising, not to save a day.</p>
 </div>
+<h2 id="skipping-a-quest">Skipping a quest</h2>
+<p>Handed the one objective you will not do? A <strong>quest skip</strong> completes an unfinished daily for you outright - it pays its <strong>10 tokens</strong>, counts toward the <strong>2 of 4</strong> that keeps your streak, and counts toward the full-clear set bonus, exactly as if you had played it.</p>
+<p>Skips are a <strong><a href="../../store/patreon/">Patreon</a> perk</strong> and cost no tokens. Open <code>/quests</code>, press <strong>Skip a Quest</strong> on the Daily tab, pick the quest from the menu and confirm.</p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Skips per week</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DONATOR</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CHILL</td>
+<td>1</td>
+</tr>
+<tr>
+<td>EPIC</td>
+<td>2</td>
+</tr>
+<tr>
+<td>SUPER</td>
+<td>2</td>
+</tr>
+<tr>
+<td>MEGA</td>
+<td>3</td>
+</tr>
+<tr>
+<td>ULTIMATE</td>
+<td>3</td>
+</tr>
+<tr>
+<td>CRAZY</td>
+<td>4</td>
+</tr>
+<tr>
+<td>GODLY</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cost</strong></td>
+<td>Free - the allowance is the perk</td>
+</tr>
+<tr>
+<td><strong>Allowance</strong></td>
+<td>1-5 per week by rank, above</td>
+</tr>
+<tr>
+<td><strong>Daily cap</strong></td>
+<td><strong>1 per day</strong>, whatever your rank</td>
+</tr>
+<tr>
+<td><strong>Resets</strong></td>
+<td>Monday 00:00 UTC, the same boundary as the refresh and freeze allowances</td>
+</tr>
+<tr>
+<td><strong>Applies to</strong></td>
+<td>Daily quests only - the weekly set can never be skipped</td>
+</tr>
+</tbody>
+</table>
+<p>What a skip can <strong>never</strong> touch:</p>
+<ul>
+<li><strong>Slot 1, the vote quest.</strong> Voting is the one objective that pays the bot back rather than you, so it is not skippable at any rank.</li>
+<li><strong>Anything you have already completed.</strong> Its tokens are already paid; a skip cannot pay them twice.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">One a day is deliberate</p>
+<p>Keeping your streak needs <strong>2 of 4</strong>, so a one-per-day cap means a skip can never hold a day on its own - you still have to vote or clear one real objective. It is there to remove the objective you dislike, not to play the day for you.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Your rank is read when you open the hub</p>
+<p>The allowance is sized from your Patreon roles the moment you run <code>/quests</code>. Let a rank lapse and your remaining skips go with it at the next open; upgrade and the larger allowance is live immediately.</p>
+</div>
 <h2 id="completion-alerts">Completion alerts</h2>
 <p>You never have to open <code>/quests</code> to find out you finished one. The moment a quest completes, the next thing you do with the bot comes back with a short private reply telling you:</p>
 <ul>
@@ -6003,6 +6144,7 @@
 <li>Progress is buffered and written to disk every <strong>30 seconds</strong>, and immediately whenever a quest completes - so a bar can lag a few seconds behind a fast activity like fishing, but a completion never does.</li>
 <li>Only you can press the buttons on your own hub.</li>
 <li>A refused refresh - no allowance left, not enough tokens, nothing left to refresh - never spends a token.</li>
+<li>A refused skip - no allowance left, one already used today, nothing left to skip - never spends a skip.</li>
 <li>The panel times out after <strong>3 minutes</strong>; run the command again to reopen it.</li>
 <li>For the multiplier rules, decay and full token maths, see the <a href="../">Quests index</a>.</li>
 </ul>

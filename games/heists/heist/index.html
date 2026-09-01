@@ -1090,6 +1090,8 @@
       
         
       
+        
+      
     
     
     
@@ -1411,6 +1413,34 @@
     
   
     /stats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../economy/money-management/leaderboards-gambling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    /leaderboards gambling
   
 
     
@@ -5392,7 +5422,7 @@
 <h2 id="description">Description</h2>
 <p>Starts a heist lobby in the channel where you ran the command. Other players can join by paying the same entry fee. Once you have enough players, you (the host) pick a location from a dropdown - different locations require different crew sizes and have different success rates and reward multipliers.</p>
 <p>When the heist runs, the bot rolls success against the location's base rate. On a win, the pot is multiplied by the location multiplier and split among participants (minus tax). On a loss, everyone loses their entry fee.</p>
-<p>Only <strong>one heist per channel</strong> can be active at a time. You can't host or join a heist if you're already in one (multiplayer or solo).</p>
+<p>Only <strong>one heist per channel</strong> can be active at a time, and a heist can't be hosted in a channel that already has another multiplayer game running in it. If a heist stalls, the channel frees itself automatically. You can't host or join a heist if you're already in one (multiplayer or solo).</p>
 <h2 id="required-fields">Required Fields</h2>
 <ul>
 <li><strong>entry_fee</strong> - The amount each player must pay to join. Accepts numbers, shorthand (<code>k</code>, <code>m</code>), or shortcuts (<code>min</code>, <code>max</code>, <code>half</code>).</li>
@@ -5503,6 +5533,7 @@
 <li><strong>Daily limit:</strong> counts toward your shared heist limit (4 for non-Patreon, up to 17 with Patreon + voting). See the <a href="../#daily-limits">Heists overview</a>.</li>
 <li><strong>Tax on winnings:</strong> 20% non-Patreon, 0% for Ultimate (T6) and above. See the <a href="../#tax-on-winnings">overview</a>.</li>
 <li><strong>Entry fee</strong> is deducted when you host. If the heist fails to start (errors, no joiners), you're refunded.</li>
+<li>The lobby message reposts itself after every join or leave, and again every 15 seconds while the channel is quiet, so the join buttons don't get buried by chat.</li>
 <li>The location dropdown shows player count requirements and difficulty for each option. Patreon-exclusive locations are locked for free users.</li>
 <li>Once joined, players can't leave - entry fee is committed.</li>
 <li>Use <a href="../heist-stats/"><code>/heist-stats</code></a> to track your win rate and daily progress.</li>
