@@ -50,9 +50,10 @@ The Paradise Vault runs a longer job, and its failure allowance stays at 3 no ma
 
 ## Notes
 
-- **Cooldown:** 10 minutes after the heist resolves (win or lose). Shared with `/solo-heist`.
-- **Daily limit:** counts toward your shared heist limit (4 for non-Patreon, up to 17 with Patreon + voting). See the [Heists overview](index.md#daily-limits).
-- **Tax on winnings:** 20% non-Patreon, 0% for Ultimate (T6) and above. See the [overview](index.md#tax-on-winnings).
+- **Cooldown:** 10 minutes after a win and 8 after a loss for free users; **5 and 4 minutes** for every Patreon rank. Shared with `/solo-heist`.
+- **Cooldown ping:** every cooldown notice and the win/loss result embed carries a **Ping me when my cooldown ends** button. Press it and the bot mentions you in that channel the moment you are free to heist again.
+- **Daily limit:** counts toward your shared heist limit (4 for non-Patreon, up to 15 with Patreon + voting). See the [Heists overview](index.md#daily-limits).
+- **Tax on winnings:** 20% non-Patreon, 0% on every Patreon rank. See the [overview](index.md#tax-on-winnings).
 - **Entry fee** is deducted when you host. If the heist fails to start (errors, no joiners), you're refunded.
 - The lobby message reposts itself after every join or leave, and again every 15 seconds while the channel is quiet, so the join buttons don't get buried by chat.
 - The location dropdown shows player count requirements and difficulty for each option. Patreon-exclusive locations are locked for free users.

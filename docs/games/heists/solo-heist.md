@@ -50,6 +50,7 @@ You can fail **one** phase and still complete the heist. Two failures and the jo
 - **Min entry:** $10,000.
 - **Max entry:** $25 trillion.
 - **Cooldown:** 15 minutes on win, 10 minutes on loss. Shared with `/heist` (multiplayer).
-- **Daily limit:** counts toward the shared heist limit (4 for non-Patreon, up to 17 max). See [overview](index.md#daily-limits).
-- **Tax:** 20% non-Patreon down to 0% Ultimate+, same rates as the multiplayer heist. Unlike multiplayer, solo tax applies to the winnings above your entry fee, not the whole payout.
+- **Cooldown ping:** the cooldown notice and the result embed carry a **Ping me when my cooldown ends** button that mentions you in the channel once the wait is over.
+- **Daily limit:** counts toward the shared heist limit (4 for non-Patreon, up to 15 max). See [overview](index.md#daily-limits).
+- **Tax:** 20% non-Patreon, 0% on every Patreon rank, same rates as the multiplayer heist. Unlike multiplayer, solo tax applies to the winnings above your entry fee, not the whole payout.
 - Solo heists log to your stats under location "solo" - see [`/heist-stats`](heist-stats.md).

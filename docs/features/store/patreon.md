@@ -68,6 +68,10 @@ Payout multiplier on daily property income. T1 and T2 get no bonus.
 
 - **T3–T7:** +5Q bank space on top of whatever you have bought.
 - **T8:** **+10Q**.
+- When your rank ends, the bonus space goes with it. Anything your bank can no
+  longer hold is moved straight into your wallet and you get a DM telling you
+  it happened - nothing is lost, but wallet money can be robbed, so bank or
+  spend it.
 
 ### Transactions
 
@@ -93,15 +97,13 @@ the profit — **30% for CRAZY, 5% for GODLY**.
 
 ### Heists
 
-- **Tax rate** on winnings:
-  - T1–T3: 15% (vs. 20% free)
-  - T4–T5: 5%
-  - T6–T8: **0%**
-- **Daily heist limit:**
-  - T1–T3: 6 (vs. 4 free)
-  - T4–T5: 8
-  - T6–T7: 10
-  - T8: 15
+- **0% tax rate** on winnings at **every rank**, T1 through T8, against 20% for
+  free users. Any paid rank makes your heist winnings tax free.
+- **Daily heist limit** — one more per rank, then a jump at the top:
+  6 / 7 / 8 / 9 / 10 / 11 / 12 / 15
+  for T1 through T8, against 4 for free users.
+- **Heist cooldown** of **5 minutes** instead of 10, dropping to **4 minutes**
+  instead of 8 when the heist fails. Every patron rank gets this.
 - **Patron-only heist location** unlocked at every rank, with its own escape routes and
   **+0.15 on the reward multiplier**. Solo and group heists share one daily counter.
 
@@ -172,6 +174,17 @@ If a payment fails, your rank stays active for a **3 day** grace period rather t
 
 !!! tip "Scratch card wins no longer need a support ticket"
     A rank won from a scratch card is banked straight into `/stored-patreon`. Redeem it yourself whenever you want it to start - there is nothing to claim in a ticket, and the days do not tick down while they sit in the bank.
+
+## When a gifted rank ends
+
+A time-limited rank does not just quietly stop. The bot DMs you three times around it:
+
+- **24 hours before** and **1 hour before** it lapses, so you can redeem more stored days first.
+- **When it ends**, with the exact list of perks you were using and what each one has dropped back to - your multipliers, cooldowns, heist count and the rest, side by side.
+
+That last DM also tells you if you still have days of the same rank banked in `/stored-patreon`, and what the rank costs if you would rather keep it going.
+
+If a lower rank of yours is still active, the ending DM compares against that instead of against the free column - and if something else you hold already covers the rank that lapsed, no DM is sent at all, because nothing actually changed for you.
 
 ## Notes
 

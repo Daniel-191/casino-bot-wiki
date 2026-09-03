@@ -46,6 +46,8 @@ Opens the bank vault shop with all 15 tiers. Higher tiers cost more money but un
 - **Bigger bank cap** = safer storage. Wallet money is at risk from `/rob`; bank is not.
 - **More daily interest** - bank interest compounds on your stored balance, so a bigger cap means a bigger interest payment at 11:00 UTC.
 - Patreon members get an additional **bank capacity bonus** stacking with their tier.
+  If that rank ends, any money above your remaining capacity is returned to your
+  wallet automatically and you are DMed about it.
 
 ## Notes
 

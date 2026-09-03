@@ -77,6 +77,26 @@ The weekly allowance and the hold cap are the same number on purpose. Spend one 
 
 The **Combo** tab shows both numbers as `Streak freezes: 2/2 (0 more can be earned this week)`.
 
+### Streak reclaim
+
+A freeze saves your stacks, not your streak - a missed day sets the streak counter back to 0 either way. If the streak that just ended was **8 days or longer**, you are offered one route back to the number:
+
+**Keep your daily streak for 7 days in a row and your old streak is handed straight back.**
+
+- The bot **DMs you** the moment a long streak ends, with the number you are playing for. You do not need quest reminders turned on for it, and there is nothing to claim or buy
+- Day 7 restores the streak in full and you carry on from there - a 40-day streak reclaimed comes back as 40, and the next kept day is 41
+- The **Combo** tab shows the run in progress as `Reclaim run: 4/7 days kept`
+- The bot DMs you again the moment it lands
+
+| Rule | Why |
+|---|---|
+| Daily streaks only | A 7-day run against a weekly streak would be most of the streak, not a comeback |
+| Only for streaks of 8+ | Below that the 7-day run outruns the number you would get back |
+| **Miss a day and the offer is gone** | It is one clean run, not a standing safety net. A freeze still absorbs the day's decay, but the day is still a miss for the reclaim |
+| Stacks are not restored | The decay from the day you missed stands - the reclaim gives back the streak count only |
+
+Lose a long streak again later and a new offer opens, for whatever the streak was worth at the time.
+
 ## Quest tokens
 
 ### What each task pays

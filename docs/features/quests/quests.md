@@ -10,7 +10,7 @@ Opens a four-tab hub. Nothing here needs claiming: quest progress is recorded au
 |---|---|
 | **Daily** | Your four daily quests, progress bars, time to reset in the title, today's login calendar day |
 | **Weekly** | Your four weekly quests, with time to reset in the title |
-| **Combo** | Current multiplier, stack breakdown, streaks, freezes held, decay warning |
+| **Combo** | Current multiplier, stack breakdown, streaks, freezes held, decay warning, [streak reclaim](index.md#streak-reclaim) run if one is open |
 | **Shop** | Everything buyable with quest tokens |
 
 Every tab carries a footer with your **token balance** and your **current multiplier**.

@@ -18,10 +18,16 @@ Every player has a daily cap on how many heists they can run (across multiplayer
 | Tier | Daily limit |
 |---|---|
 | Non-Patreon | 4 |
-| Donator / Chill / Epic (T1–T3) | 6 |
-| Super / Mega (T4–T5) | 8 |
-| Ultimate / Crazy (T6–T7) | 10 |
+| Donator (T1) | 6 |
+| Chill (T2) | 7 |
+| Epic (T3) | 8 |
+| Super (T4) | 9 |
+| Mega (T5) | 10 |
+| Ultimate (T6) | 11 |
+| Crazy (T7) | 12 |
 | Godly (T8) | 15 |
+
+Every rank is worth at least one more heist a day than the one below it, and Godly jumps three.
 
 **Vote bonus:** voting on **both Top.gg and DBL within 24 hours** adds **+2 daily heists**, taking a free user up to 6 and Godly to 17.
 
@@ -32,9 +38,9 @@ A portion of every winning heist is taxed and goes to the **community lottery po
 | Tier | Tax rate |
 |---|---|
 | Non-Patreon | 20% |
-| Donator / Chill / Epic (T1–T3) | 15% |
-| Super / Mega (T4–T5) | 5% |
-| Ultimate / Crazy / Godly (T6–T8) | 0% |
+| Any Patreon rank (T1–T8) | 0% |
+
+Heist tax is a flat yes/no perk rather than a ladder - the cheapest rank removes it just as completely as the most expensive one.
 
 ## Cooldowns
 
