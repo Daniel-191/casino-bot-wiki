@@ -2127,6 +2127,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#bounty-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bounty board
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5436,6 +5447,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#bounty-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bounty board
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -5558,7 +5580,7 @@
 <ul>
 <li><strong>user</strong> - Mention another player to view their stats. Defaults to you.</li>
 </ul>
-<p><strong>Shows:</strong> total attempts, successful robberies, failed robberies, success rate, money won, money lost (failed attempts), money lost (as victim), net profit/loss, average win, average loss, anonymous mode status.</p>
+<p><strong>Shows:</strong> total attempts, successful robberies, failed robberies, success rate, money won, money lost (failed attempts), money lost (as victim), net profit/loss, average win, average loss, and - when you are viewing your own stats - your anonymous mode status. Another player's anonymous mode status is never shown.</p>
 <p><strong>Cooldown:</strong> 5 seconds.</p>
 <hr />
 <h2 id="bounty-system">Bounty system</h2>
@@ -5605,6 +5627,11 @@
 <li><strong>amount</strong> - Additional money. Accepts shorthand and shortcuts.</li>
 </ul>
 <p><strong>Cooldown:</strong> 10 seconds.</p>
+<hr />
+<h3 id="bounty-board">Bounty board</h3>
+<p>In the Paradise server only, a live bounty board is kept in its own channel. The bot posts a single embed listing the <strong>top 10 highest active bounties</strong> and edits that same message every <strong>5 minutes</strong>, so the board never spams the channel.</p>
+<p>Each entry mentions the target where possible, and falls back to their username if they have left the server. Expired bounties drop off automatically on the next refresh.</p>
+<p>There is no command for this - the board runs on its own.</p>
 <hr />
 <h2 id="general-notes">General notes</h2>
 <ul>
