@@ -58,7 +58,7 @@ View robbery statistics for yourself or another player.
 
 - **user** - Mention another player to view their stats. Defaults to you.
 
-**Shows:** total attempts, successful robberies, failed robberies, success rate, money won, money lost (failed attempts), money lost (as victim), net profit/loss, average win, average loss, anonymous mode status.
+**Shows:** total attempts, successful robberies, failed robberies, success rate, money won, money lost (failed attempts), money lost (as victim), net profit/loss, average win, average loss, and - when you are viewing your own stats - your anonymous mode status. Another player's anonymous mode status is never shown.
 
 **Cooldown:** 5 seconds.
 
@@ -132,6 +132,16 @@ Add more money to a bounty you've already placed.
 - **amount** - Additional money. Accepts shorthand and shortcuts.
 
 **Cooldown:** 10 seconds.
+
+---
+
+### Bounty board
+
+In the Paradise server only, a live bounty board is kept in its own channel. The bot posts a single embed listing the **top 10 highest active bounties** and edits that same message every **5 minutes**, so the board never spams the channel.
+
+Each entry mentions the target where possible, and falls back to their username if they have left the server. Expired bounties drop off automatically on the next refresh.
+
+There is no command for this - the board runs on its own.
 
 ---
 
