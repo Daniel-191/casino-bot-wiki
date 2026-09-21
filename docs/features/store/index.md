@@ -36,7 +36,7 @@ Two stores in Paradise Bot - an in-game **bank-vault upgrade shop** ([`/shop`](s
 
 Real-money tier subscriptions via [Patreon](https://patreon.com/ParadiseBotx). 8 tiers from DONATOR to GODLY. Perks include:
 
-- **+15% to +200% farming profit boost**
+- **+25% to +400% farming profit boost**
 - **+10% to +66% farming speed**
 - **+25% mining bonus + Mine All button**
 - **0% heist tax** (Tier 6+)

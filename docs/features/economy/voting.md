@@ -27,9 +27,12 @@ Opens the comprehensive voting interface with:
 ### Available Voting Sites
 - **Top.gg** - Primary Discord bot listing site
 - **Discord Bot List (DBL)** - Secondary listing platform
-- **Rank.top** - Additional voting opportunity
+- **Rank.top** - Additional voting opportunity, with an optional **Power Vote**
 
-Each site has a 12-hour cooldown between votes.
+Each site has a 12-hour cooldown between votes. The exception is a Rank.top power
+vote, which is on a 23-hour cooldown and pays 5 scratch cards and 2.5 hours of farm
+growth instead of the normal 2 cards and 1 hour - see
+[Vote](../../economy/earning/vote.md#ranktop-power-votes).
 
 ## Reward System
 

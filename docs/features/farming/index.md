@@ -57,18 +57,20 @@ Fertilizer only pays off if you actually harvest sooner - if you plant overnight
 
 Donator tiers stack a profit boost and a grow-time speed boost on every crop. The profit boost multiplies your **profit** - the margin between what you paid for the seed and what it sells for - not the gross sale price:
 
-| Tier | Name | Profit boost | Grow speed |
-|---|---|---|---|
-| Tier 1 | DONATOR | +15% | +10% |
-| Tier 2 | CHILL | +25% | +15% |
-| Tier 3 | EPIC | +30% | +20% |
-| Tier 4 | SUPER | +50% | +25% |
-| Tier 5 | MEGA | +65% | +30% |
-| Tier 6 | ULTIMATE | +80% | +35% |
-| Tier 7 | CRAZY | +100% (2×) | +40% |
-| Tier 8 | GODLY | **+200% (3× profit)** | **3× faster (33% grow time)** |
+| Tier | Name | Profit boost | Grow speed | Earnings per day |
+|---|---|---|---|---|
+| Tier 1 | DONATOR | +25% | +15% | 1.47× |
+| Tier 2 | CHILL | +40% | +20% | 1.75× |
+| Tier 3 | EPIC | +60% | +27.5% | 2.21× |
+| Tier 4 | SUPER | +85% | +35% | 2.85× |
+| Tier 5 | MEGA | +115% | +42.5% | 3.74× |
+| Tier 6 | ULTIMATE | +150% | +50% | 5.00× |
+| Tier 7 | CRAZY | +200% (3× profit) | +57.5% | 7.06× |
+| Tier 8 | GODLY | **+400% (5× profit)** | **3× faster (33% grow time)** | **15.0×** |
 
-Donators (T1+) also unlock **auto-replant** in farm settings - your crops auto-harvest and replant on a small profit tax.
+The two boosts multiply. A faster crop is harvested more often, so the last column - profit boost divided by the share of the grow time you still wait - is what the rank is really worth over a day.
+
+**CRAZY and GODLY only** (T7-T8) unlock **auto-harvest and replant** in farm settings: finished crops are sold and the same crop is replanted for you, minus a flat **5% tax** on the profit.
 
 ## Random events
 

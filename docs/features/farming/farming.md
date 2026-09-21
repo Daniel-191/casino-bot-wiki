@@ -22,7 +22,7 @@ The main entry point for the entire farming system. Running `/farming` brings up
 | **Harvest** | Collect every ready crop in one click. Money lands instantly. |
 | **Replant** | After a harvest, replant the same crops + fertilizers in the same slots in one click. |
 | **Shop** | Browse seeds and fertilizers. |
-| **Settings** | Toggle auto-replant (donators), notifications, etc. |
+| **Settings** | Toggle auto-harvest and replant (CRAZY and GODLY only), notifications, etc. |
 
 ## Plot rules
 

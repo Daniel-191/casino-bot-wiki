@@ -17,7 +17,7 @@ Run [`/vote`](../economy/earning/vote.md) for the in-game voting hub. Each vote 
 
 Real-money tier subscriptions at [patreon.com/ParadiseBotx](https://patreon.com/ParadiseBotx). 8 tiers from DONATOR ($) to GODLY ($$$). Perks include:
 
-- **Massive farming boosts** - up to **3× profit, 3× faster grow time** (Tier 8).
+- **Massive farming boosts** - up to **5× profit, 3× faster grow time** (Tier 8), which is **15× the earnings per day** of a free farm.
 - **0% heist tax** (every tier).
 - **+25% mining earnings** + Mine All button.
 - **15 lottery tickets** vs. 10 free.

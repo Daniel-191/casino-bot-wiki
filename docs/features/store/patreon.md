@@ -80,20 +80,23 @@ Payout multiplier on daily property income. T1 and T2 get no bonus.
 
 ### Farming
 
-| Tier | Profit boost | Grow time | Speed |
-|---|---|---|---|
-| Tier 1 | +15% | −10% | 1.11× faster |
-| Tier 2 | +25% | −15% | 1.18× faster |
-| Tier 3 | +30% | −20% | 1.25× faster |
-| Tier 4 | +50% | −25% | 1.33× faster |
-| Tier 5 | +65% | −30% | 1.43× faster |
-| Tier 6 | +80% | −35% | 1.54× faster |
-| Tier 7 | +100% (2×) | −40% | 1.67× faster |
-| Tier 8 | **+200% (3×)** | **−67%** | **3× faster** |
+| Tier | Profit boost | Grow time | Speed | Earnings per day |
+|---|---|---|---|---|
+| Tier 1 | +25% | −15% | 1.18× faster | 1.47× |
+| Tier 2 | +40% | −20% | 1.25× faster | 1.75× |
+| Tier 3 | +60% | −27.5% | 1.38× faster | 2.21× |
+| Tier 4 | +85% | −35% | 1.54× faster | 2.85× |
+| Tier 5 | +115% | −42.5% | 1.74× faster | 3.74× |
+| Tier 6 | +150% | −50% | 2× faster | 5.00× |
+| Tier 7 | +200% (3×) | −57.5% | 2.35× faster | 7.06× |
+| Tier 8 | **+400% (5×)** | **−67%** | **3× faster** | **15.0×** |
+
+The last column is what the rank is actually worth: profit and speed multiply,
+so a tier that pays 3× per crop and grows 2.35× faster earns 7.06× per day.
 
 **Auto harvest + replant** (in farm settings) is **CRAZY and GODLY only**: when your
-crops finish, they are sold and the same crop is replanted for you, minus a tax on
-the profit — **30% for CRAZY, 5% for GODLY**.
+crops finish, they are sold and the same crop is replanted for you, minus a
+**flat 5% tax** on the profit at both ranks.
 
 ### Heists
 
