@@ -1770,6 +1770,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Supported sites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ranktop-power-votes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rank.top power votes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -5262,6 +5279,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Supported sites">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ranktop-power-votes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rank.top power votes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -5368,9 +5402,46 @@
 <ul>
 <li><strong>Top.gg</strong> - main listing site</li>
 <li><strong>DBL (DiscordBotList)</strong> - secondary listing</li>
-<li><strong>Rank.top</strong> - bonus site (counts toward streak)</li>
+<li><strong>Rank.top</strong> - bonus site (does <strong>not</strong> count toward the streak)</li>
 </ul>
 <p>Each site is on its own 12-hour cooldown.</p>
+<h3 id="ranktop-power-votes">Rank.top power votes</h3>
+<p>Rank.top's vote page offers a <strong>Power Vote</strong>, which is worth more to the bot's
+ranking but puts your next Rank.top vote on a <strong>23-hour</strong> cooldown instead of 12 -
+so it spends both of the day's Rank.top slots at once. It pays accordingly:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Scratch cards</th>
+<th>Farm growth</th>
+<th>Cooldown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Normal vote</td>
+<td>2</td>
+<td>1 hour</td>
+<td>12h</td>
+</tr>
+<tr>
+<td>Normal vote x2 (a full day)</td>
+<td>4</td>
+<td>2 hours</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Power vote</strong></td>
+<td><strong>5</strong></td>
+<td><strong>2.5 hours</strong></td>
+<td>23h</td>
+</tr>
+</tbody>
+</table>
+<p>A power vote also counts as <strong>two</strong> votes toward vote quests, so it cannot leave
+the daily "vote twice" quest unfinishable. Like any Rank.top vote, it pays no cash
+and does not affect your vote streak.</p>
 <h2 id="usage">Usage</h2>
 <p><code>/vote</code></p>
 <h2 id="notes">Notes</h2>
@@ -5382,7 +5453,7 @@
 <li><strong>Milestone bonuses</strong> are paid on top of streak rewards at days 7, 30, 90, 180, and 365 (2×, 10×, 30×, 60×, 150× of base, respectively).</li>
 <li><strong>Patreon vote multiplier</strong> is separate from the DWM multiplier: T1 = 1.0×, T2 = 1.5×, T3 = 2×, T4 = 3×, T5 = 4×, T6 = 5×, T7 = 6.5×, T8 = 15×.</li>
 <li>See <a href="../vote-milestones/"><code>/vote-milestones</code></a> for streak-tier permanent unlocks (property protection, extra slots).</li>
-<li><strong>Quest progress</strong> counts from any of the three sites. The daily quest needs one vote, so a second site adds nothing to it that day - but the weekly quest counts every vote, so voting on all three sites clears its 5 votes in under two days.</li>
+<li><strong>Quest progress</strong> counts from any of the three sites. A Rank.top power vote counts as two. The daily quest needs one vote, so a second site adds nothing to it that day - but the weekly quest counts every vote, so voting on all three sites clears its 5 votes in under two days.</li>
 <li>You can toggle a vote-ready DM reminder from the same panel.</li>
 </ul>
 
